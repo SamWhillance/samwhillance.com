@@ -1,2 +1,2 @@
-const About = () => <div>About us</div>;
+const About = () => <div>About me</div>;
 export default About;
