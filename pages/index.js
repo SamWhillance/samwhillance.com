@@ -23,7 +23,7 @@ const Index = () => {
   return (<div style={{
     margin: 0,
     color: 'white',
-    background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
+    background: 'linear-gradient(90deg, rgba(20,50,36,1) 0%, rgba(201,120,151,1) 35%, rgba(101,212,255,1) 100%)',
 }}>
   <div style={{
     margin: 'auto',
@@ -45,7 +45,7 @@ const Index = () => {
           {content[year].map(project => (
 
           <div key={`${year}-${project.id}`}>
-            <Link href={`projects/${project.id}`}>
+            <Link href={`${year}/${project.id}`}>
               <a>{project.title}</a>
             </Link>
           </div>))}

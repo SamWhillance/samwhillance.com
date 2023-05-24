@@ -8,7 +8,7 @@ const Project = () => {
     const { year, project: id } = router.query;
 
     const [project, setProject] = useState({})
-    
+
     useEffect(() => {
         if (year && id) {
             const p = content[year].find((project) => project.id === id)
