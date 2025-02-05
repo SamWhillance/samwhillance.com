@@ -97,3 +97,7 @@ body {
 .tree-line:last-child::after {
   display: none;
 }
+
+#button_contact {
+  height: fit-content;
+}

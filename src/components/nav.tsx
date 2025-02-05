@@ -8,7 +8,7 @@ export default function Nav() {
     return (
         <div className="flex flex-col md:flex-row m-8 gap-8 text-white justify-between">
             <div className="flex">
-                <Link href="/" className="mr-4">
+                <Link href="/" className="mr-4 w-16">
                     <Image
                         className="rounded-full shadow-lg"
                         src="/sam_luxury.png"
@@ -24,7 +24,7 @@ export default function Nav() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 flex-wrap">
                 <NavLink href="/education">Education</NavLink>
                 <NavLink href="/experience">Experience</NavLink>
                 <NavLink href="/skills">Skills</NavLink>
