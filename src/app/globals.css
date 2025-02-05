@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+ */
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0a0a;
+}
+
+#page {
+  background: #ff99b6;
+  background-image:
+    radial-gradient(at 18% 9%, hsla(297, 71%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 38% 59%, hsla(68, 70%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 77% 85%, hsla(144, 81%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 80%, hsla(139, 88%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 12% 79%, hsla(357, 75%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 93% 84%, hsla(257, 73%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
+}
