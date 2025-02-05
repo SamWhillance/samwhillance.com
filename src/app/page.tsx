@@ -1,14 +1,37 @@
-import ContentContainer from './components/content_container'
-import PageContainer from './components/page_container'
+import ContentContainer from '../components/content_container'
+import PageContainer from '../components/page_container'
+import TreeLine from '../components/tree_line'
 
 export default function Home() {
 
   return (
     <PageContainer>
       <ContentContainer>
-        <div className="flex flex-col gap-4 justify-center items-center m-8">
-          <h1 className="text-4xl font-bold"><span className="text-white/85">Your next</span> Full Stack Software Engineer.</h1>
-          <p className="text-lg">I Build <span className="italic font-bold">Fast</span>. I Build <span className="text-cyan-400 font-bold">Smart</span>.</p>
+        <div className="flex flex-col gap-4 justify-center items-start md:items-center m-4 tracking-wider">
+          <div className="text-3xl font-bold flex flex-col items-start md:items-center gap-2">
+            <span className="text-2xl text-white/65 -rotate-6">Your next</span>
+            <span className="text-5xl">Full Stack</span>
+            <span className="font-lightest text-code tracking-tight">{'<Software Engineer />'}</span>
+          </div>
+          {/* <p className="text-lg">Build <span className="italic font-bold">Fast</span>. Build <span className="text-cyan-400 font-bold">Smart</span>.</p> */}
+
+          <br />
+
+          <div className="flex flex-col pl-4">
+            <TreeLine isFirst>Design</TreeLine>
+            <div className="pl-4">
+              <TreeLine>Develop</TreeLine>
+              <div className="pl-4">
+                <TreeLine>Debug</TreeLine>
+                <div className="pl-4">
+                  <TreeLine>Deploy</TreeLine>
+                  <div className="pl-4">
+                    <TreeLine>Deliver</TreeLine>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </ContentContainer>
     </PageContainer>

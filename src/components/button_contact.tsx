@@ -9,6 +9,7 @@ const ButtonContact = ({ children }: ButtonContactProps) => {
         <Link
             href={'/contact'}
             className="
+            w-full
         inline-block px-6 py-4
         bg-black/70 hover:bg-black/50
         backdrop-blur-md

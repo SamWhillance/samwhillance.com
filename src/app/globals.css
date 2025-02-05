@@ -41,3 +41,59 @@ body {
     radial-gradient(at 55% 39%, hsla(149, 16%, 17%, 1) 0px, transparent 50%),
     radial-gradient(at 49% 35%, hsla(165, 16%, 17%, 1) 0px, transparent 50%);
 }
+
+#sam_whillance2 {
+  font-family: "Codystar", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-code {
+  font-family: 'Consolas', monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.home_d {
+  margin-left: 10px;
+}
+
+.tree-line {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--foreground);
+  font-family: "Space Grotesk", serif;
+  margin-bottom: 0.5rem;
+}
+
+.tree-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.75rem;
+  height: 1px;
+  background-color: var(--foreground);
+}
+
+.tree-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: calc(100% + 0.5rem);
+  background-color: var(--foreground);
+}
+
+/* Remove vertical line for the last item */
+.tree-line:last-child::after {
+  display: none;
+}
