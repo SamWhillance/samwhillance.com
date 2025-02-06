@@ -11,7 +11,7 @@ export default function Nav() {
                 <Link href="/" className="mr-4 w-16">
                     <Image
                         className="rounded-full shadow-lg"
-                        src="/sam_luxury.png"
+                        src="/sam_real.jpg"
                         alt="Sam Whillance"
                         title="Sam Whillance"
                         width={64}
