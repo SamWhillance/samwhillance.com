@@ -22,11 +22,14 @@ export default function Home() {
             <div className="pl-4">
               <TreeLine>Develop</TreeLine>
               <div className="pl-4">
-                <TreeLine>Debug</TreeLine>
+                <TreeLine>Database</TreeLine>
                 <div className="pl-4">
-                  <TreeLine>Deploy</TreeLine>
+                  <TreeLine>Debug</TreeLine>
                   <div className="pl-4">
-                    <TreeLine>Deliver</TreeLine>
+                    <TreeLine>Deploy</TreeLine>
+                    <div className="pl-4">
+                      <TreeLine>Deliver</TreeLine>
+                    </div>
                   </div>
                 </div>
               </div>
