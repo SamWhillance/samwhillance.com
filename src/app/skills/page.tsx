@@ -160,6 +160,7 @@ const skills: Skill[] = [
 	{ name: 'Render.com', value: 4, category: 'Tools' },
 	{ name: 'Algolia', value: 7, category: 'Tools' },
 	{ name: 'ChatGPT', value: 8, category: 'Tools' },
+	{ name: 'Postmark', value: 7, category: 'Tools' },
 
 	// Office 365
 	{ name: 'Microsoft Azure', value: 6, category: 'Office 365' },
