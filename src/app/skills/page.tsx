@@ -86,6 +86,8 @@ const skills: Skill[] = [
 	{ name: 'C#', value: 2, category: 'Languages' },
 	{ name: 'Java', value: 4, category: 'Languages' },
 	{ name: 'Python', value: 2, category: 'Languages' },
+	{ name: 'SQL', value: 3, category: 'Languages' },
+	{ name: 'GML', value: 8, category: 'Languages' },
 
 	// Web
 	{ name: 'React', value: 9, category: 'Web' },
@@ -116,7 +118,6 @@ const skills: Skill[] = [
 	{ name: 'DynamoDB', value: 7, category: 'Database' },
 	{ name: 'AWS S3', value: 7, category: 'Database' },
 	{ name: 'MongoDB', value: 3, category: 'Database' },
-	{ name: 'SQL', value: 3, category: 'Database' },
 	{ name: 'LDAP', value: 2, category: 'Database' },
 	{ name: 'Relational Databases', value: 4, category: 'Database' },
 	{ name: 'ERDs', value: 5, category: 'Database' },
@@ -200,6 +201,16 @@ const skills: Skill[] = [
 	{ name: 'Problem-Solving', value: 8, category: 'Soft Skills' },
 	{ name: 'Time Management', value: 8, category: 'Soft Skills' },
 	{ name: 'Adaptability', value: 9, category: 'Soft Skills' },
+	{ name: 'Critical Thinking', value: 7, category: 'Soft Skills' },
+	{ name: 'Emotional Intelligence', value: 7, category: 'Soft Skills' },
+	{ name: 'Conflict Resolution', value: 6, category: 'Soft Skills' },
+	{ name: 'Active Listening', value: 8, category: 'Soft Skills' },
+	{ name: 'Mentoring', value: 8, category: 'Soft Skills' },
+	{ name: 'Public Speaking', value: 5, category: 'Soft Skills' },
+	{ name: 'Decision Making', value: 7, category: 'Soft Skills' },
+	{ name: 'Creativity', value: 9, category: 'Soft Skills' },
+	{ name: 'Work Ethic', value: 9, category: 'Soft Skills' },
+	{ name: 'Organization', value: 8, category: 'Soft Skills' },
 
 	// Personal
 	{ name: 'Tennis', value: 5, category: 'Personal' },
