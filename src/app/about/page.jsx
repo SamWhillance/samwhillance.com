@@ -8,13 +8,12 @@ export default function About() {
         <PageContainer>
             <ContentContainer>
                 <div className="flex flex-col gap-4 p-8 text-lg justify-center items-center text-left md:text-center">
-                    <p>I'm an ambitious self-starter, innovator, automator and ideas man who is always seeking his next challenge (sometimes too soon).</p>
+                    <p>I'm an ambitious self-starter, innovator, automator and ideas man who is always seeking his next challenge.</p>
 
                     <p>When I'm not playing tennis, I'm fixing Breville coffee machines in my shed.</p>
 
                     <div className="flex flex-row gap-2 items-center">
                         <Image src="/breville.jpg" alt="Breville" width={50} height={100} className="rounded-full mr-4" />
-
                         <a href="https://www.facebook.com/profile.php?id=100083324981791" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-800">Bendigo Breville Repairs & Service</a>
                     </div>
 

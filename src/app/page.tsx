@@ -1,4 +1,6 @@
 import ContentContainer from '../components/content_container'
+import Image from 'next/image'
+import Link from 'next/link'
 import PageContainer from '../components/page_container'
 import TreeLine from '../components/tree_line'
 
@@ -7,7 +9,10 @@ export default function Home() {
   return (
     <PageContainer>
       <ContentContainer>
-        <div className="flex flex-col gap-4 justify-center items-start md:items-center m-4 tracking-wider">
+
+
+        <div className="relative flex flex-col gap-4 justify-center items-start md:items-center m-4 tracking-wider">
+
           <div className="text-3xl font-bold flex flex-col items-start md:items-center gap-2">
             <span className="text-2xl text-white/65 -rotate-6">Your next</span>
             <span className="text-5xl">Full Stack</span>
@@ -35,6 +40,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="flex flex-col md:flex-row gap-8 justify-around items-center mt-12 w-full">
+            <Image src="/wethrift.png" alt="Wethrift" width={100} height={100} />
+            <Image src="/mphn.png" alt="Wethrift" width={100} height={100} />
+            <Image src="/ca.png" alt="Wethrift" width={100} height={100} />
+          </div>
+
         </div>
       </ContentContainer>
     </PageContainer>
