@@ -18,11 +18,13 @@ export default function About() {
                         <a href="https://www.facebook.com/profile.php?id=100083324981791" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-800">Bendigo Breville Repairs & Service</a>
                     </div>
 
-                    <div className="flex flex-row gap-4 w-full items-center justify-center flex-wrap mt-4">
-                        <GalleryImage src="/tennis.png" />
-                        <GalleryImage src="/penguin.png" />
-                        <GalleryImage src="/sports.png" />
-                        <GalleryImage src="/drink.png" />
+                    <div className="flex justify-center w-full mt-4">
+                        <div className="grid grid-cols-2 gap-4 max-w-[650px]">
+                            <GalleryImage src="/tennis.png" />
+                            <GalleryImage src="/penguin.png" />
+                            <GalleryImage src="/sports.png" />
+                            <GalleryImage src="/drink.png" />
+                        </div>
                     </div>
 
                     <p>The MacBook Air 15" Silicon is the best laptop ever made.</p>

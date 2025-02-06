@@ -93,6 +93,7 @@ const skills: Skill[] = [
 	{ name: 'React', value: 9, category: 'Web' },
 	{ name: 'Solid.js', value: 8, category: 'Web' },
 	{ name: 'Node.js', value: 9, category: 'Web' },
+	{ name: 'TypeScript', value: 6, category: 'Web' },
 	{ name: 'Express', value: 7, category: 'Web' },
 	{ name: 'Angular', value: 5, category: 'Web' },
 	{ name: 'Cloudflare', value: 7, category: 'Web' },

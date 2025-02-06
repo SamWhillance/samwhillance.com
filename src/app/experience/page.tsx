@@ -131,6 +131,7 @@ const FreelanceWebDeveloper = function () {
 				<Box>
 					<H3>samwhillance.com (this site)</H3>
 					<p className="text-sm text-gray-400 mb-4">2025</p>
+					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 12 hours</p>
 					<p>This site is built using React, Next.js, Tailwind, and TypeScript. Hosted on Vercel.</p>
 				</Box>
 

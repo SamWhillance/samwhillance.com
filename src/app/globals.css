@@ -30,6 +30,11 @@ body {
     radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
 }
 
+#page>div {
+  max-width: 1200px;
+  width: 100%;
+}
+
 .progress-bar {
   background: #ff99b6;
   background-image:
