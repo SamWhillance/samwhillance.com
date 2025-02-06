@@ -7,7 +7,7 @@ export default function About() {
     return (
         <PageContainer>
             <ContentContainer>
-                <div className="flex flex-col gap-4 p-8 text-lg justify-center items-center text-center">
+                <div className="flex flex-col gap-4 p-8 text-lg justify-center items-center text-left md:text-center">
                     <p>I'm an ambitious self-starter, innovator, automator and ideas man who is always seeking his next challenge (sometimes too soon).</p>
 
                     <p>When I'm not playing tennis, I'm fixing Breville coffee machines in my shed.</p>
@@ -19,16 +19,13 @@ export default function About() {
                     </div>
 
                     <div className="flex justify-center w-full mt-4">
-                        <div className="grid grid-cols-2 gap-4 max-w-[650px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[650px]">
                             <GalleryImage src="/tennis.png" />
                             <GalleryImage src="/penguin.png" />
                             <GalleryImage src="/sports.png" />
                             <GalleryImage src="/drink.png" />
                         </div>
                     </div>
-
-                    <p>The MacBook Air 15" Silicon is the best laptop ever made.</p>
-
                 </div>
             </ContentContainer>
         </PageContainer>

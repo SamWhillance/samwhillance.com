@@ -21,9 +21,18 @@ export default function Experience() {
 	)
 }
 
-const Listing = function ({ jobTitle, location, years, image, children }: { jobTitle: string, years: string, location: string, image: string, children: React.ReactNode }) {
+const Listing = function ({ h1, h2, line1, line2, image, children, linkedin }:
+	{
+		h1: string,
+		h2?: string,
+		line1: string,
+		line2: string,
+		image: string,
+		children: React.ReactNode,
+		linkedin?: string
+	}) {
 	return (
-		<Collapse image={image} title={jobTitle} line1={years} line2={location}>
+		<Collapse image={image} h1={h1} h2={h2} line1={line1} line2={line2} h1_link={linkedin}>
 			<div className="flex flex-col md:flex-row w-full">
 				<div className="flex flex-col w-full">
 					{children}
@@ -44,7 +53,7 @@ const Box = function ({ children }: { children: React.ReactNode }) {
 
 const Wethrift = function () {
 	return (
-		<Listing image="/wethrift.png" years="2022 - Present" jobTitle="Full Stack Software Engineer" location="Remote">
+		<Listing image="/wethrift.png" h1="Wethrift" h2="Full Stack Software Engineer" line1="2022 - Present" line2="Remote" linkedin="wethrift">
 			<Box>
 				<p>Joining Wethrift in 2022, Sam's expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. He built systems that handled over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. Sam also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
 			</Box>
@@ -124,7 +133,7 @@ const Wethrift = function () {
 
 const FreelanceWebDeveloper = function () {
 	return (
-		<Listing image="/globe.svg" years="2024 - Present" jobTitle="Freelance Web Developer" location="Remote">
+		<Listing image="/globe.svg" h1="Freelance Web Developer" line1="2024 - Present" line2="Remote">
 
 			<div className="flex flex-col gap-4">
 
@@ -190,7 +199,7 @@ const FreelanceWebDeveloper = function () {
 
 const CrmDeveloper = function () {
 	return (
-		<Listing image="/mphn.png" years="2017 - 2022" jobTitle="Systems Developer & Support (CRM)" location="Bendigo & Remote">
+		<Listing image="/mphn.png" h1="Murray PHN" h2="Systems Developer & Support (CRM)" line1="2017 - 2022" line2="Bendigo & Remote" linkedin="murray-phn">
 			<div className="flex flex-col gap-4">
 
 				<div>
@@ -258,8 +267,7 @@ const CrmDeveloper = function () {
 
 const CaTechnologies = function () {
 	return (
-
-		<Listing image="/ca.png" years="2015 - 2017" jobTitle="Associate Software Engineeer" location="Melbourne">
+		<Listing image="/ca.png" h1="CA Technologies" h2="Associate Software Engineeer" line1="2015 - 2017" line2="Melbourne" linkedin="ca-technologies">
 
 			<div className="flex flex-col gap-4">
 				<div >
@@ -305,10 +313,10 @@ const CaTechnologies = function () {
 
 const FreelanceGameDeveloper = function () {
 	return (
-		<Listing image="/juicycraft.png" years="2015 - 2017" jobTitle="Freelance Game Developer" location="Remote">
+		<Listing image="/juicycraft.png" h1="Freelance Game Developer" line1="2015 - 2017" line2="Remote">
 			<div className="flex flex-col gap-4 w-full">
 
-				<Collapse image={'/t20.webp'} title={"T20 Card Cricket"} line1={"iOS and Android"} line2={'2017'}>
+				<Collapse image={'/t20.webp'} h1={"T20 Card Cricket"} line1={"iOS and Android"} line2={'2017'}>
 					<div className="flex flex-col gap-4 w-full">
 
 						<p className="italic">"The cricket card-matching game that improves your concentration! Match cards, hit runs and score tons in this card-matching, cricket-themed matching game that improves your concentration!"</p>
@@ -323,7 +331,7 @@ const FreelanceGameDeveloper = function () {
 					</div>
 				</Collapse>
 
-				<Collapse image={'/gravipop.png'} title={"Gravipop"} line1={"HTML5"} line2={'2015'}>
+				<Collapse image={'/gravipop.png'} h1={"Gravipop"} line1={"HTML5"} line2={'2015'}>
 
 					<div className="flex flex-col gap-4">
 						<p>In this game your task is to pop all the bubbles while avoiding obstacles like guided-rockets, sharp saws and spike traps. Each time you pop a big bubble, it will split into two smaller bubbles. Some levels will require you to change gravity to move around. All levels have a time limit. Any remaining time after completing the level is converted into points. There are 30 levels.</p>
@@ -332,13 +340,13 @@ const FreelanceGameDeveloper = function () {
 					</div>
 				</Collapse>
 
-				<Collapse image={'/jchtml5.jpg'} title={"JCHTML5 Engine"} line1={"HTML5 Game Template"} line2={'2014'}>
+				<Collapse image={'/jchtml5.jpg'} h1={"JCHTML5 Engine"} line1={"HTML5 Game Template"} line2={'2014'}>
 					<div className="flex flex-col gap-4">
 						<p>The JCHTML5 Engine was a GameMaker: Studio project file that implemented a long list of features that were common in HTML5 games or required by sponsors when selling game licenses. JCHTML5 was optimized for both mobile and desktop.</p>
 					</div>
 				</Collapse>
 
-				<Collapse image={'/fly-trap.webp'} title={"Fly Trap"} line1={"HTML5"} line2={'2014'}>
+				<Collapse image={'/fly-trap.webp'} h1={"Fly Trap"} line1={"HTML5"} line2={'2014'}>
 					<div className="flex flex-col gap-4">
 						<p className="italic">"Fly Trap is a reflex based game with a little defenseless insect and you can enjoy it online and for free on Silvergames.com. Fly as long as you can but don't touch the insect-eating plants! This might be easy in the beginning but wait until there are plenty of insects waiting for you to eat you alive."</p>
 						<p>A HTML5 game built using GameMaker Studio. Graphics by <a href="https://x.com/NathanGDquest" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Nathan Lovato</a>.</p>
@@ -361,7 +369,7 @@ const FreelanceGameDeveloper = function () {
 const PianoTeacher = function () {
 	return (
 
-		<Listing image="/piano.png" years="2013 - 2016" jobTitle="Piano Teacher (Self-Employed)" location="Melbourne">
+		<Listing image="/piano.png" h1="Piano Teacher" line1="2013 - 2016" line2="Melbourne">
 			<Box>
 				Creating learning plans for students. Teaching students how to read and play music.
 			</Box>
