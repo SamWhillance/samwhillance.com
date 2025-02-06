@@ -351,10 +351,7 @@ const FreelanceGameDeveloper = function () {
 				</Collapse>
 
 				<Box>
-					<H3>Native Mobile Games</H3>
-					Self-published games on the App Store and Google Play.
-					- Fly Trap
-					- Hedges
+					Hedges
 				</Box>
 			</div>
 

@@ -30,6 +30,14 @@ body {
     radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
 }
 
+.progress-bar {
+  background: #ff99b6;
+  background-image:
+    radial-gradient(at 18% 9%, hsla(297, 71%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 93% 84%, hsla(257, 73%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
+}
+
 #content-container {
   background-color: hsla(341, 0%, 0%, 1);
   background-image:
