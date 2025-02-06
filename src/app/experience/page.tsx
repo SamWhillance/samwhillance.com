@@ -55,7 +55,7 @@ const Wethrift = function () {
 	return (
 		<Listing image="/wethrift.png" h1="Wethrift" h2="Full Stack Software Engineer" line1="2022 - Present" line2="Remote" linkedin="wethrift">
 			<Box>
-				<p>Joining Wethrift in 2022, Sam's expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. He built systems that handled over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. Sam also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
+				<p>Joining Wethrift in 2022, my expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
 			</Box>
 
 			<Image src="/wethrift_team.webp" alt="Wethrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
