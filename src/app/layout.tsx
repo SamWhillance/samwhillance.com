@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Space_Grotesk } from 'next/font/google'
 
@@ -46,6 +47,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}>
       <body>
         {children}
+        <GoogleAnalytics gaId="G-92KBFP02HW" />
       </body>
     </html>
   );
