@@ -4,244 +4,372 @@ import H3 from '../../components/h3'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageContainer from '../../components/page_container'
+import ReactPlayer from 'react-player'
 import TreeLine from '../../components/tree_line'
+import VideoPlayer from '../../components/video_player'
 
 export default function Experience() {
 
-    return (
-        <PageContainer>
-            <ContentContainer>
-                <Wethrift />
-                <FreelanceWebDeveloper />
-                <CrmDeveloper />
-                <CaTechnologies />
-                <FreelanceGameDeveloper />
-                <PianoTeacher />
-
-                <div className="flex flex-col p-8 gap-4">
-
-                    <h3 className="text-xl font-bold">Units</h3>
-                    <div className="flex flex-col md:flex-row text-white/75 bg-black/50 p-4 pl-8 rounded-lg">
-                        <div className="flex flex-col pr-8">
-                            <ul className="list-disc leading-relaxed">
-                                <li>Database, Analysis and Design</li>
-                                <li>Software Architectures and Design</li>
-                                <li>Technical Software Development</li>
-                                <li>Object Oriented Programming</li>
-                                <li>Software Development Practices</li>
-                                <li>Software Deployment and Evolution</li>
-                                <li>Web Applications</li>
-                                <li>Data Structures and Patterns</li>
-                                <li>Interface Design and Development</li>
-                                <li>Engineering Mathematics</li>
-                            </ul>
-                        </div>
-                        <div className="flex flex-col">
-                            <ul className="list-disc leading-relaxed">
-                                <li>Artificial Intelligence</li>
-                                <li>User Experience Design</li>
-                                <li>Start-Up Fundamentals</li>
-                                <li>Digital Graphics</li>
-                                <li>LAN Principles</li>
-                                <li>Digital Video and Audio</li>
-                                <li>Pervasive Game Design</li>
-                                <li>Physics of Games</li>
-                                <li>Principles of Game Design</li>
-                                <li>Professional Issues in IT</li>
-                                <li>Writing for Interactive Narratives</li>
-                                <li>3D Modelling</li>
-                                <li>Games Programming</li>
-                                <li>Interactive Games Structures</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </ContentContainer>
-        </PageContainer >
-    )
+	return (
+		<PageContainer>
+			<ContentContainer>
+				<Wethrift />
+				<FreelanceWebDeveloper />
+				<CrmDeveloper />
+				<CaTechnologies />
+				<FreelanceGameDeveloper />
+				<PianoTeacher />
+			</ContentContainer>
+		</PageContainer >
+	)
 }
 
 const Listing = function ({ jobTitle, location, years, image, children }: { jobTitle: string, years: string, location: string, image: string, children: React.ReactNode }) {
-    return (
-        <Collapse image={image} title={jobTitle} line1={years} line2={location}>
-            <div className="flex flex-col md:flex-row">
-                <div className="flex flex-col p-8 w-full">
-                    <h4 className="text-lg text-white/75 mt-4">{jobTitle}</h4>
-                    <p className="text-lg text-white/75 mb-4">{location}</p>
-                    {children}
-                </div>
-            </div>
-        </Collapse>
-    )
+	return (
+		<Collapse image={image} title={jobTitle} line1={years} line2={location}>
+			<div className="flex flex-col md:flex-row w-full">
+				<div className="flex flex-col w-full">
+					{children}
+				</div>
+			</div>
+		</Collapse>
+	)
+}
+
+const Box = function ({ children }: { children: React.ReactNode }) {
+	return (
+		<div className="flex flex-col border border-white/25 text-white/75 bg-black/50 p-4 rounded-lg">
+			{children}
+		</div>
+	)
 }
 
 
 const Wethrift = function () {
-    return (
-        <Listing image="/wethrift.png" years="2022 - Present" jobTitle="Full Stack Software Engineer" location="Remote">
+	return (
+		<Listing image="/wethrift.png" years="2022 - Present" jobTitle="Full Stack Software Engineer" location="Remote">
+			<Box>
+				<p>Joining Wethrift in 2022, Sam's expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. He built systems that handled over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. Sam also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
+			</Box>
 
-            <H3>Overview</H3>
-            <p className="text-white/75 bg-black/50 p-4 rounded-lg">Joining Wethrift in 2022, Sam's expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. He built systems that handled over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. Sam also enhanced the team’s developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.
-            </p>
+			<Image src="/wethrift_team.webp" alt="Wethrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
 
-            <H3>Work Included</H3>
+			<H3>What I worked on</H3>
+			<Box>
+				<div className="flex flex-col pl-4 pr-8">
+					<ul className="list-disc leading-relaxed">
+						<li>Built an OCR (Optical Text Recognition) server for Deal.Town</li>
+						<li>Streamlined the DevOps experience (launch configs, debugging)</li>
+						<li>Front-end work on wethrift.com</li>
+						<li>API test suite using Thunder Client</li>
+						<li>Migrated user permission management from static to cloud</li>
+						<li>Browserless Shopify coupon code tester (200,000+ tests per day)</li>
+						<li>Built internal tools to prevent publishing breaking changes to wethrift.com</li>
+						<li>Real-time regex sandbox to optimise coupon extraction algorithms</li>
+						<li>Ported internal dashboard from Parcel to NextJS, upgraded Material UI v5</li>
+						<li>Implemented basic API security on public-access API</li>
+						<li>Coupon code scraper for store domains (90,000+)</li>
+					</ul>
+					<ul className="list-disc leading-relaxed">
+						<li>Deal.Town search box</li>
+						<li>Switched DOM Parser library from JSDom to Linkedom after testing revealed it to be significantly faster</li>
+						<li>Integrated various 3rd-party APIs (The Companies, Data4SEO, Google Analytics, BrightData, Slack, Zapier, Algolia, Reddit)</li>
+						<li>Puppeteer scraping</li>
+						<li>Management of AWS DynamoDB databases</li>
+						<li>AB testing of wethrift.com, sometimes up to 10 concurrent tests</li>
+						<li>Built a new coupon processing pipeline from the ground up. This ~6 month project comprised of:</li>
+						<li>A database queue to which content scrapers could push to</li>
+						<li>A plug-and-play action-based task stack (~30 tasks) which handled information discovery, data checks, OpenAI APIs, and other services.</li>
+						<li>Optimisation of the queue, which processed 150 items at once, with persistent state on each item in case of server restarts.</li>
+						<li>Internal dashboards to monitor the load, timing and cost of the pipeline, its tasks, and its services.</li>
+						<li>New content scrapers</li>
+						<li>Built an internal Chrome extension to collect coupon codes</li>
+						<li>Development on Savvy, Wethrift's Chrome Extension</li>
+						<li>Began migration of wethrift.com from NextJS to Solid.js</li>
+					</ul>
+				</div>
+			</Box>
 
-            <div className="flex flex-col md:flex-row text-white/75 bg-black/50 p-4 pl-8 rounded-lg">
-                <div className="flex flex-col pr-8">
-                    <ul className="list-disc leading-relaxed">
-                        <li>Built an OCR (Optical Text Recognition) server for Deal.Town</li>
-                        <li>Streamlined the DevOps experience (launch configs, debugging)</li>
-                        <li>Front-end work on wethrift.com</li>
-                        <li>API test suite using Thunder Client</li>
-                        <li>Migrated user permission management from static to cloud</li>
-                        <li>Browserless Shopify coupon code tester (200,000+ tests per day)</li>
-                        <li>Built internal tools to prevent publishing breaking changes to wethrift.com</li>
-                        <li>Real-time regex sandbox to optimise coupon extraction algorithms</li>
-                        <li>Ported internal dashboard from Parcel to NextJS, upgraded Material UI v5</li>
-                        <li>Implemented basic API security on public-access API</li>
-                        <li>Coupon code scraper for store domains (90,000+)</li>
-                    </ul>
-                    <ul className="list-disc leading-relaxed">
-                        <li>Deal.Town search box</li>
-                        <li>Switched DOM Parser library from JSDom to Linkedom after testing revealed it to be significantly faster</li>
-                        <li>Integrated various 3rd-party APIs (The Companies, Data4SEO, Google Analytics, BrightData, Slack, Zapier, Algolia, Reddit)</li>
-                        <li>Puppeteer scraping</li>
-                        <li>Management of AWS DynamoDB databases</li>
-                        <li>AB testing of wethrift.com, sometimes up to 10 concurrent tests</li>
-                        <li>Built a new coupon processing pipeline from the ground up. This ~6 month project comprised of:</li>
-                        <li>A database queue to which content scrapers could push to</li>
-                        <li>A plug-and-play action-based task stack (~30 tasks) which handled information discovery, data checks, OpenAI APIs, and other services.</li>
-                        <li>Optimisation of the queue, which processed 150 items at once, with persistent state on each item in case of server restarts.</li>
-                        <li>Internal dashboards to monitor the load, timing and cost of the pipeline, its tasks, and its services.</li>
-                        <li>New content scrapers</li>
-                        <li>Development on Savvy, Wethrift's Chrome Extension</li>
-                        <li>Began migration of wethrift.com from NextJS to Solid.js</li>
-                    </ul>
-                </div>
-            </div>
+			<H3>Skills I Acquired</H3>
+			<Box>
 
-        </Listing>
-    )
+				<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
+					<ul className="list-disc leading-relaxed">
+						<li>React</li>
+						<li>Next.js</li>
+						<li>Solid.js</li>
+						<li>AWS (S3 & DynamoDB)</li>
+						<li>Puppeteer</li>
+						<li>Cloudflare</li>
+					</ul>
+					<ul className="list-disc leading-relaxed">
+						<li>React Perf Optimisation</li>
+						<li>Zapier</li>
+						<li>Proxies</li>
+						<li>Google Analytics</li>
+						<li>Tesseract OCR</li>
+						<li>Material UI</li>
+					</ul>
+					<ul className="list-disc leading-relaxed">
+						<li>Algolia</li>
+						<li>Data4SEO</li>
+						<li>Chrome Extensions</li>
+						<li>.env Management</li>
+						<li>Slack API</li>
+					</ul>
+				</div>
+			</Box>
+
+
+		</Listing>
+	)
 }
 
 const FreelanceWebDeveloper = function () {
-    return (
-        <Listing image="/racketroles.png" years="2017 - Present" jobTitle="Freelance Web Developer" location="Remote">
+	return (
+		<Listing image="/globe.svg" years="2024 - Present" jobTitle="Freelance Web Developer" location="Remote">
 
-            <H3>Overview</H3>
-            <p className="text-white/75 bg-black/50 p-4 rounded-lg">
-                Built websites for family friends (gallowaybuilders.com.au, vatmengroup.com.au)
-                Self-produced racketroles.com, a 'digital add-on' that enhances real-life tennis
-            </p>
+			<div className="flex flex-col gap-4">
 
-            <H3>Work Included</H3>
+				<Box>
+					<H3>samwhillance.com (this site)</H3>
+					<p className="text-sm text-gray-400 mb-4">2025</p>
+					<p>This site is built using React, Next.js, Tailwind, and TypeScript. Hosted on Vercel.</p>
+				</Box>
 
-        </Listing>
-    )
+				<Box>
+					<Image src="/racketroles.png" alt="Racket Roles Logo" width={100} height={0} className="rounded-lg mt-4" />
+					<H3>Racket Roles</H3>
+					<a href="https://play.racketroles.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">racketroles.com</a>
+					<p className="text-sm text-gray-400 mb-4">2025</p>
+
+					<p className="italic">"Tennis, transformed! Activate legendary player cards to mix up your real-life tennis matches with unique rule modifiers. Elevate your game with iconic moves and strategies."</p>
+					<br />
+					<p>This was a passion project of mine, developed over several months. Originally built using Vite, I quickly ported it to Next.js. Hosted on Vercel. Designed primarly with mobile devices in mind.</p>
+
+					<p className="font-bold mt-6">Tech:</p>
+					<ul className="list-disc leading-relaxed pl-4">
+						<li>React, Next.js</li>
+						<li>Vercel</li>
+						<li>Cloudflare</li>
+					</ul>
+				</Box>
+
+				<Box>
+					<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg mt-4 mb-4" />
+					<a href="https://vatmengroup.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">vatmengroup.com.au</a>
+					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 22 hours</p>
+					<p className="text-sm text-gray-400 mb-4">2024</p>
+					<ul className="list-disc leading-relaxed pl-4">
+						<li>Commercial cleaning company, already knew the owner through family</li>
+						<li>Converted the original WordPress site to React/Next.js</li>
+						<li>Modernised the design, added mobile responsiveness</li>
+						<li>Email delivery via Postmark</li>
+						<li>Deployed using Digital Ocean (linux)</li>
+						<li>Custom nginx config</li>
+						<li>Automatic deploys from git pushes</li>
+					</ul>
+				</Box>
+
+				<Box>
+					<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mt-4 mb-4" />
+					<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">gallowaybuilders.com.au</a>
+					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 10 hours</p>
+					<p className="text-sm text-gray-400 mb-4">2024</p>
+					<ul className="list-disc leading-relaxed pl-4">
+						<li>Friend's construction business</li>
+						<li>Hosted on Heroku</li>
+						<li>Cloudflare routing</li>
+						<li>React, Next.js</li>
+						<li>Automatic deploys from git pushes</li>
+					</ul>
+				</Box>
+			</div>
+
+		</Listing>
+	)
 }
 
 const CrmDeveloper = function () {
-    return (
-        <Listing image="/mphn.png" years="2017 - 2022" jobTitle="Systems Developer & Support (CRM)" location="Bendigo & Remote">
+	return (
+		<Listing image="/mphn.png" years="2017 - 2022" jobTitle="Systems Developer & Support (CRM)" location="Bendigo & Remote">
+			<div className="flex flex-col gap-4">
 
-            <H3>Overview</H3>
-            Since 2017, Murray PHN has been completely transformed as a company and is now considered one of the leading PHNs in terms of technology and innovation.
+				<div>
+					<H3>Overview</H3>
+					<Box>
+						Since 2017, Murray PHN has been completely transformed as a company and is now considered one of the leading PHNs in terms of technology and innovation.
 
-            Initially contracted, became permanent. Job was to rebuild their CRM. I met with key staff to document processes & identify software requirements. I undertook evidence-based research to map business requirements with competing CRM platforms. The original CRM, which was primarily an account/contact metadata warehouse, was expanded into a broad, integrated Business Intelligence platform which manages data & assets in ways we didn't foresee, across many business areas such as governance, people & culture, finance, reporting, quality, risk, data and systems.
+						Initially contracted, became permanent. Job was to rebuild their CRM. I met with key staff to document processes & identify software requirements. I undertook evidence-based research to map business requirements with competing CRM platforms. The original CRM, which was primarily an account/contact metadata warehouse, was expanded into a broad, integrated Business Intelligence platform which manages data & assets in ways we didn't foresee, across many business areas such as governance, people & culture, finance, reporting, quality, risk, data and systems.
+					</Box>
+				</div>
 
-            <br />
-            <br />
+				<div>
+					<H3>I built these features into the CRM</H3>
+					<Box>
+						<div className="flex flex-col pl-4 pr-4">
+							<ul className="list-disc leading-relaxed">
+								<li>Enterprise-wide risk assessments, including counterparty risk framework</li>
+								<li>Regulation register. Controlled documents (Policies, Procedures, etc.)</li>
+								<li>Incident response (WHS, Cybersecurity, Data Quality & Breaches)</li>
+								<li>Business processes, mapped to other entities and company assets</li>
+								<li>Tracking company KPIs and associated data</li>
+								<li>Software, hardware and device management</li>
+								<li>Internal request/ticketing system</li>
+								<li> Geographical data (Suburbs, Statistical Areas, Postcodes, etc)</li>
+								<li>Event management with custom EventBrite integration</li>
+								<li>Insight and report generation using the PowerBI platform</li>
+							</ul>
+						</div>
+					</Box>
+				</div>
 
-            <H3>I built these features into the CRM</H3>
+				<div>
+					<H3>What I worked on</H3>
+					<Box>
+						<ul className="pl-4 pr-4 list-disc leading-relaxed">
+							<li>Developed in-house web applications, such as an internal 'staff hub' integrated into Dynamics 365 and the Microsoft Graph API.</li>
+							<li>built CRM integrated HTML5 software solutions, deployed on the Azure cloud environment with continuous deployment processes utilizing Git and Visual Studio Code. Some projects required their own web server (usually ExpressJS), which authenticated with the Microsoft Dynamics and Graph APIs.</li>
+							<li>I migrated another Primary Health Network from ChilliDB to a custom Dynamics 365 solution we had built in-house. This included ongoing support and customization of their CRM solution.</li>
+							<li>My other responsibilities included training, Office 365 administration, and support.</li>
+						</ul>
+					</Box>
+				</div>
 
-            <div className="flex flex-col md:flex-row text-white/75 bg-black/50 p-4 pl-8 rounded-lg">
-                <div className="flex flex-col pr-8">
-                    <ul className="list-disc leading-relaxed">
-                        <li>Enterprise-wide risk assessments, including counterparty risk framework</li>
-                        <li>Regulation register. Controlled documents (Policies, Procedures, etc.)</li>
-                        <li>Incident response (WHS, Cybersecurity, Data Quality & Breaches)</li>
-                        <li>Business processes, mapped to other entities and company assets</li>
-                        <li>Tracking company KPIs and associated data</li>
-                        <li>Software, hardware and device management</li>
-                        <li>Internal request/ticketing system</li>
-                        <li> Geographical data (Suburbs, Statistical Areas, Postcodes, etc)</li>
-                        <li>Event management with custom EventBrite integration</li>
-                        <li>Insight and report generation using the PowerBI platform</li>
-                    </ul>
-                </div>
-            </div>
-
-            I developed in-house web applications, such as an internal 'staff hub' integrated into Dynamics 365 and the Microsoft Graph API.
-
-            I built CRM integrated HTML5 software solutions, deployed on the Azure cloud environment with continuous deployment processes utilizing Git and Visual Studio Code. Some projects required their own web server (usually ExpressJS), which authenticated with the Microsoft Dynamics and Graph APIs.
-
-            The ways in which the PHN automates its processes evolved over time, as did the technology that empowered the company. Power Automate (Microsoft Flow) is integrated into many of the company's systems. These automated processes include actionable reminders, data transformation, and file/data intake.
-
-            I migrated another Primary Health Network from ChilliDB to a custom Dynamics 365 solution we had built in-house. This includes ongoing support and customization of their CRM solution.
-
-            My other responsibilities included training, Office 365 administration, and support.
-
-        </Listing>
-    )
+				<div>
+					<H3>Skills I Acquired</H3>
+					<Box>
+						<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
+							<ul className="list-disc leading-relaxed">
+								<li>Angular</li>
+								<li>Microsoft Dynamics 365</li>
+								<li>Microsoft Graph API</li>
+								<li>Microsoft Azure</li>
+								<li>Sharepoint</li>
+								<li>PowerBI</li>
+								<li>Power Automate</li>
+								<li>Power Apps</li>
+							</ul>
+						</div>
+					</Box>
+				</div>
+			</div>
+		</Listing>
+	)
 }
 
 const CaTechnologies = function () {
-    return (
+	return (
 
-        <Listing image="/ca.png" years="2015 - 2017" jobTitle="Associate Software Engineeer" location="Melbourne">
+		<Listing image="/ca.png" years="2015 - 2017" jobTitle="Associate Software Engineeer" location="Melbourne">
 
-            <H3>Overview</H3>
+			<div className="flex flex-col gap-4">
+				<div >
+					<H3>Overview</H3>
+					<Box>
+						This was my first "real job" after completing my studies. During the two years at CA Technologies, our team built a bottom-up web interface to allow new and existing customers to manage their complex CA Directory instances in a user-friendly way. All configuration was previously done through a command line interface. The new web interface included forms and inputs that were dynamically generated from schema files, physics-enabled network diagrams which visualized connections between hardware, and their status, and a fully automated testing suite integrated into the deployment process.</Box>
+				</div>
 
-            <p className="text-white/75 bg-black/50 p-4 rounded-lg">
-                During the two years at CA Technologies, our team built a bottom-up web interface to allow new and existing customers to manage their complex CA Directory instances in a user-friendly way. All configuration was previously done through a command line interface. The new web interface included forms and inputs that were dynamically generated from schema files, physics-enabled network diagrams which visualized connections between hardware, and their status, and a fully automated testing suite integrated into the deployment process.</p>
+				<div>
+					<H3>What I worked on</H3>
+					<Box>
+						<ul className="pl-4 pr-4 list-disc leading-relaxed">
+							<li>Work collaboratively to write quality code that met the Definition of Done.</li>
+							<li>Participate in design and code reviews with other engineers.</li>
+							<li>Actively support and contribute to end of iteration demos.</li>
+							<li>Responsible for assigned integration, testing and deployment tasks.</li>
+							<li>Actively participate in backlog refinement sessions with team members.</li>
+							Commit to delivering stories and tasks within sprints (AGILE).
+							<li>Learning new programming languages and frameworks on the job.</li>
+						</ul>
+					</Box>
+				</div>
 
-            <H3>Work Included</H3>
+				<div>
+					<H3>Skills I Acquired</H3>
+					<Box>
+						<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
+							<ul className="list-disc leading-relaxed">
+								<li>Angular</li>
+								<li>LDAP</li>
+								<li>Schema-defined User Interfaces</li>
+								<li>Automated browser testing with Istanbul</li>
+								<li>Scrum / Agile</li>
+							</ul>
+						</div>
+					</Box>
+				</div>
+			</div>
 
-            <div className="flex flex-col md:flex-row text-white/75 bg-black/50 p-4 pl-8 rounded-lg">
-                <ul className="list-disc leading-relaxed">
-                    <li>Work collaboratively to write quality code that met the Definition of Done.</li>
-                    <li>Participate in design and code reviews with other engineers.</li>
-                    <li>Actively support and contribute to end of iteration demos.</li>
-                    <li>Responsible for assigned integration, testing and deployment tasks.</li>
-                    <li>Actively participate in backlog refinement sessions with team members.</li>
-                    Commit to delivering stories and tasks within sprints (AGILE).
-                    <li>Learning new programming languages and frameworks on the job.</li>
-                </ul>
-            </div>
-
-        </Listing>
-    )
+		</Listing>
+	)
 }
 
 const FreelanceGameDeveloper = function () {
-    return (
-        <div>
-            <h3>Freelance Game Developer</h3>
-            Self-employed Freelance Developer
-            Juicy Craft, Melbourne
+	return (
+		<Listing image="/juicycraft.png" years="2015 - 2017" jobTitle="Freelance Game Developer" location="Remote">
+			<div className="flex flex-col gap-4 w-full">
 
-            Co-produced T20 Card Cricket Mobile Game for Jump Punch Kick.
-            Self-published two Apple and Android mobile games.
-            Producing web games for Nickelodeon, KaiserGames, Admeen and Spil Games.
-            Working with publishers, artists and developers from around the world.
-            Built a HTML5 game template/framework which was sold to developers
+				<Collapse image={'/t20.webp'} title={"T20 Card Cricket"} line1={"iOS and Android"} line2={'2017'}>
+					<div className="flex flex-col gap-4 w-full">
 
-        </div>
-    )
+						<p className="italic">"The cricket card-matching game that improves your concentration! Match cards, hit runs and score tons in this card-matching, cricket-themed matching game that improves your concentration!"</p>
+
+						<p>Built for a passionate Cricket client in New Zealand, this project spanned 3 years, working on it in our spare time.</p>
+
+						<p>The game was built using GameMaker Studio, which allows developers to publish games to multiple platforms from a single codebase.</p>
+
+						<a href="https://apps.apple.com/gb/app/t20-card-cricket/id1290542871" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View on the App Store</a>
+
+						<VideoPlayer url="https://www.youtube.com/watch?v=b1-UuWkaeno" />
+					</div>
+				</Collapse>
+
+				<Collapse image={'/gravipop.png'} title={"Gravipop"} line1={"HTML5"} line2={'2015'}>
+
+					<div className="flex flex-col gap-4">
+						<p>In this game your task is to pop all the bubbles while avoiding obstacles like guided-rockets, sharp saws and spike traps. Each time you pop a big bubble, it will split into two smaller bubbles. Some levels will require you to change gravity to move around. All levels have a time limit. Any remaining time after completing the level is converted into points. There are 30 levels.</p>
+						<a href="https://www.newgrounds.com/portal/view/628279" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View on Newgrounds (buggy)</a>
+						<VideoPlayer url="https://vimeo.com/79067217" />
+					</div>
+				</Collapse>
+
+				<Collapse image={'/jchtml5.jpg'} title={"JCHTML5 Engine"} line1={"HTML5 Game Template"} line2={'2014'}>
+					<div className="flex flex-col gap-4">
+						<p>The JCHTML5 Engine was a GameMaker: Studio project file that implemented a long list of features that were common in HTML5 games or required by sponsors when selling game licenses. JCHTML5 was optimized for both mobile and desktop.</p>
+					</div>
+				</Collapse>
+
+				<Collapse image={'/fly-trap.webp'} title={"Fly Trap"} line1={"HTML5"} line2={'2014'}>
+					<div className="flex flex-col gap-4">
+						<p className="italic">"Fly Trap is a reflex based game with a little defenseless insect and you can enjoy it online and for free on Silvergames.com. Fly as long as you can but don't touch the insect-eating plants! This might be easy in the beginning but wait until there are plenty of insects waiting for you to eat you alive."</p>
+						<p>A HTML5 game built using GameMaker Studio. Graphics by <a href="https://x.com/NathanGDquest" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Nathan Lovato</a>.</p>
+
+						<a href="https://www.silvergames.com/en/fly-trap" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Play on Silvergames.com</a>
+						<VideoPlayer url="/flytrap_video.mov" />
+					</div>
+				</Collapse>
+
+				<Box>
+					<H3>Native Mobile Games</H3>
+					Self-published games on the App Store and Google Play.
+					- Fly Trap
+					- Hedges
+				</Box>
+			</div>
+
+
+		</Listing>
+	)
 }
 
 const PianoTeacher = function () {
-    return (
-        <div>
-            <h3>Piano Teacher</h3>
-            Self-employed Piano Teacher
+	return (
 
-            Creating learning plans for students.
-            Teaching students how to read and play music.
-            Discovering and working with motivations to accelerate learning.
-
-        </div>
-    )
+		<Listing image="/piano.png" years="2013 - 2016" jobTitle="Piano Teacher (Self-Employed)" location="Melbourne">
+			<Box>
+				Creating learning plans for students. Teaching students how to read and play music.
+			</Box>
+		</Listing>
+	)
 }
