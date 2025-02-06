@@ -1,6 +1,5 @@
 import ContentContainer from '../components/content_container'
 import Image from 'next/image'
-import Link from 'next/link'
 import PageContainer from '../components/page_container'
 import TreeLine from '../components/tree_line'
 
