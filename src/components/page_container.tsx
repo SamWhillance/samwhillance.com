@@ -1,11 +1,7 @@
 import Footer from './footer'
-import Image from "next/image";
 import Nav from './nav'
 
 export default function PageContainer({ children }: { children: React.ReactNode }) {
-
-    // Software Engineer
-
     return (
         <div className="flex flex-col min-h-screen m-2">
             <div id="page" className="flex flex-col min-h-screen rounded-2xl">

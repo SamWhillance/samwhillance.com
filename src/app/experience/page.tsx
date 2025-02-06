@@ -2,10 +2,7 @@ import { Collapse } from '../../components/collapse'
 import ContentContainer from '../../components/content_container'
 import H3 from '../../components/h3'
 import Image from 'next/image'
-import Link from 'next/link'
 import PageContainer from '../../components/page_container'
-import ReactPlayer from 'react-player'
-import TreeLine from '../../components/tree_line'
 import VideoPlayer from '../../components/video_player'
 
 export default function Experience() {
