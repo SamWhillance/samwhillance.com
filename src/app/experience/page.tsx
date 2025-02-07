@@ -53,12 +53,12 @@ const Box = function ({ children }: { children: React.ReactNode }) {
 
 const Wethrift = function () {
 	return (
-		<Listing image="/wethrift.png" h1="Wethrift" h2="Full Stack Software Engineer" line1="2022 - Present" line2="Remote" linkedin="wethrift">
+		<Listing image="/wethrift.png" h1="WeThrift" h2="Full Stack Software Engineer" line1="2022 - Present" line2="Remote" linkedin="wethrift">
 			<Box>
-				<p>Joining Wethrift in 2022, my expertise in AI-powered technology revolutionized the way Wethrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
+				<p>Joining WeThrift in 2022, my expertise in AI-powered technology revolutionized the way WeThrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
 			</Box>
 
-			<Image src="/wethrift_team.webp" alt="Wethrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
+			<Image src="/wethrift_team.webp" alt="WeThrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
 
 			<H3>What I worked on</H3>
 			<Box>
@@ -90,7 +90,7 @@ const Wethrift = function () {
 						<li>Internal dashboards to monitor the load, timing and cost of the pipeline, its tasks, and its services.</li>
 						<li>New content scrapers</li>
 						<li>Built an internal Chrome extension to collect coupon codes</li>
-						<li>Development on Savvy, Wethrift's Chrome Extension</li>
+						<li>Development on Savvy, WeThrift's Chrome Extension</li>
 						<li>Began migration of wethrift.com from NextJS to Solid.js</li>
 					</ul>
 				</div>
