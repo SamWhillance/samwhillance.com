@@ -19,8 +19,8 @@ export default function Nav() {
                         priority
                     />
                 </Link>
-                <div id="sam_whillance" className="md:hidden flex flex-nowrap whitespace-nowrap p-2 text-2xl font-bold text-white">
-                    Samuel<br />Whillance
+                <div id="sam_whillance" className="md:hidden flex flex-nowrap whitespace-nowrap text-2xl font-bold text-white mt-auto mb-auto">
+                    Samuel Whillance
                 </div>
             </div>
 
