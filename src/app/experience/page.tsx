@@ -138,6 +138,17 @@ const FreelanceWebDeveloper = function () {
 			<div className="flex flex-col gap-4">
 
 				<Box>
+					<H3>bendigobreville.com</H3>
+					<p className="text-sm text-gray-400 mb-4">2025</p>
+					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 5 hours</p>
+					<p className="font-bold mt-6">Tech:</p>
+					<ul className="list-disc leading-relaxed pl-4">
+						<li>React, Next.js, TypeScript, Tailwind</li>
+						<li>Vercel + Cloudflare</li>
+					</ul>
+				</Box>
+
+				<Box>
 					<H3>samwhillance.com (this site)</H3>
 					<p className="text-sm text-gray-400 mb-4">2025</p>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 12 hours</p>
