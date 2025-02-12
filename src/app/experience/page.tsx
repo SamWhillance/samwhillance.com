@@ -140,6 +140,8 @@ const FreelanceWebDeveloper = function () {
 				<Box>					
 					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg mt-4" />
 					<H3>bendigobreville.com</H3>
+					<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
+
 					<p className="text-sm text-gray-400 mb-4">2025</p>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 5 hours</p>
 					<p className="font-bold mt-6">Tech:</p>
