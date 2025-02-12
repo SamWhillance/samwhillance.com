@@ -33,7 +33,7 @@ export function Collapse({ image, h1, h2, line1, line2, children, h1_link }: Col
 
                     <div className="flex flex-row gap-8">
                         <div className="flex justify-center m-auto hidden md:block">
-                            <Image src={image} alt={h1 || ''} width={64} height={64} className="rounded-xl" />
+                            <Image src={image} alt={h1 || ''} width={64} height={64} className="rounded-md" />
                         </div>
                         <div className="grid grid-cols-[1fr_auto_auto] gap-2 md:gap-4 items-center w-full text-left">
                             <div className="flex flex-col">

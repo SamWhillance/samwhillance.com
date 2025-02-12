@@ -113,7 +113,7 @@ const skills: Skill[] = [
 	{ name: 'Material UI', value: 7, category: 'Web' },
 	{ name: 'Responsive design', value: 8, category: 'Web' },
 	{ name: 'D3.js', value: 7, category: 'Web' },
-	{ name: 'Tailwind CSS', value: 7, category: 'Web' },
+	{ name: 'Tailwind', value: 7, category: 'Web' },
 	{ name: 'SEO', value: 5, category: 'Web' },
 	{ name: 'SSG/SSR', value: 6, category: 'Web' },
 	{ name: 'Design principles', value: 7, category: 'Web' },

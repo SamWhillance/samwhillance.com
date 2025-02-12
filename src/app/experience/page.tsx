@@ -12,6 +12,7 @@ export default function Experience() {
 			<ContentContainer>
 				<Wethrift />
 				<FreelanceWebDeveloper />
+				<SavingsExpert/>
 				<CrmDeveloper />
 				<CaTechnologies />
 				<FreelanceGameDeveloper />
@@ -98,7 +99,6 @@ const Wethrift = function () {
 
 			<H3>Skills I Acquired</H3>
 			<Box>
-
 				<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
 					<ul className="list-disc leading-relaxed">
 						<li>React</li>
@@ -126,14 +126,41 @@ const Wethrift = function () {
 				</div>
 			</Box>
 
+		</Listing>
+	)
+}
 
+const SavingsExpert = function () {
+	return (
+		<Listing image="/savings_expert.png" h1="Savings Expert" line1="2023 - Present" line2="Remote">	
+		<Box>				
+					<p>I've appeared in articles offering my "expertise" on saving money and other commerce related topics.</p>
+
+					<div className="flex flex-row gap-4 mt-4 mb-4">
+						<Image src="/yahoo.png" alt="Yahoo" width={100} height={0}  />
+						<Image src="/the_sun.png" alt="The Sun" width={100} height={0}  />
+						<Image src="/metro.svg" alt="Metro.co.uk" width={100} height={0}  />
+						<Image src="/kidspot.png" alt="Kidspot.com.au" width={100} height={0}  />
+					</div>
+
+					<p>Here are some of the articles I've been featured in:</p>
+					<ul className="list-disc leading-relaxed pl-4 text-sm">
+						<li><a href="https://ca.style.yahoo.com/6-ways-spend-less-christmas-080000662.html" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://ca.style.yahoo.com/6-ways-spend-less-christmas-080000662.html</a></li>
+						<li><a href="https://www.thesun.co.uk/money/19945889/discount-expert-bag-water-freezer-save-energy-costs" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.thesun.co.uk/money/19945889/discount-expert-bag-water-freezer-save-energy-costs</a></li>
+						<li><a href="https://metro.co.uk/2022/10/03/ten-easy-ways-to-save-money-from-the-comfort-of-your-couch-17488662/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://metro.co.uk/2022/10/03/ten-easy-ways-to-save-money-from-the-comfort-of-your-couch-17488662/</a></li>
+						<li><a href="https://www.retailtechnologyreview.com/articles/2022/08/09/customer-data-concerns-6-ways-online-shoppers-can-spot-a-fake-website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.retailtechnologyreview.com/articles/2022/08/09/customer-data-concerns-6-ways-online-shoppers-can-spot-a-fake-website/</a></li>
+						<li><a href="https://www.kidspot.com.au/lifestyle/money/five-money-saving-hacks-for-washing-and-ironing-your-clothes/news-story/1917b94a58d30623dac126db7db89154" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.kidspot.com.au/lifestyle/money/five-money-saving-hacks-for-washing-and-ironing-your-clothes/news-story/1917b94a58d30623dac126db7db89154</a></li>
+						<li><a href="https://www.the-sun.com/money/6163291/money-saving-kitchen-appliance-hack-freezer/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.the-sun.com/money/6163291/money-saving-kitchen-appliance-hack-freezer/</a></li>
+						<li><a href="https://www.nottinghampost.com/news/cost-of-living/save-hundreds-energy-bills-avoiding-8272059" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.nottinghampost.com/news/cost-of-living/save-hundreds-energy-bills-avoiding-8272059</a></li>
+					</ul>
+				</Box>
 		</Listing>
 	)
 }
 
 const FreelanceWebDeveloper = function () {
 	return (
-		<Listing image="/globe.svg" h1="Freelance Web Developer" line1="2024 - Present" line2="Remote">
+		<Listing image="/freelance_web.png" h1="Freelance Web Developer" line1="2024 - Present" line2="Remote">
 
 			<div className="flex flex-col gap-4">
 
@@ -159,7 +186,7 @@ const FreelanceWebDeveloper = function () {
 					<ul className="list-disc leading-relaxed pl-4">
 						<li>React, Next.js</li>
 						<li>TypeScript (first time using it)</li>
-						<li>Tailwind CSS (first time using it)</li>
+						<li>Tailwind (first time using it)</li>
 						<li>Vercel + Cloudflare</li>
 					</ul>
 				</Box>
@@ -293,7 +320,7 @@ const CaTechnologies = function () {
 				<div >
 					<H3>Overview</H3>
 					<Box>
-						This was my first "real job" after completing my studies. During the two years at CA Technologies, our team built a bottom-up web interface to allow new and existing customers to manage their complex CA Directory instances in a user-friendly way. All configuration was previously done through a command line interface. The new web interface included forms and inputs that were dynamically generated from schema files, physics-enabled network diagrams which visualized connections between hardware, and their status, and a fully automated testing suite integrated into the deployment process.</Box>
+						This was my first "real job" after completing my studies. During the two years at CA Technologies, I built a new web interface to allow customers to manage their complex, connected CA Directory instances in a user-friendly way (all configuration was previously done through a CLI). The visual interface included forms and inputs that were dynamically generated from schema files, physics-enabled network diagrams which visualized connections between hardware and their status, and a fully automated-browser testing suite (Istanbul).</Box>
 				</div>
 
 				<div>
@@ -305,9 +332,16 @@ const CaTechnologies = function () {
 							<li>Actively support and contribute to end of iteration demos.</li>
 							<li>Responsible for assigned integration, testing and deployment tasks.</li>
 							<li>Actively participate in backlog refinement sessions with team members.</li>
-							Commit to delivering stories and tasks within sprints (AGILE).
+							<li>Commit to delivering stories and tasks within sprints (AGILE).</li>
 							<li>Learning new programming languages and frameworks on the job.</li>
 						</ul>
+					</Box>
+				</div>
+
+				<div>
+					<H3>Can I see it?</H3>
+					<Box>
+						<p>I no longer have access to the codebase. Broadcom acquired CA Technologies in 2018 (for just $18 billion). Snippets of the interface I designed and built can be found in their <a href="https://techdocs.broadcom.com/us/en/symantec-security-software/identity-security/directory/12-6/administrating/migrating-from-odsee-to-ca-directory/creating-and-configuring-ca-directory.html" target="_blank" rel="noopener noreferrer" className="inline-block text-blue-500 underline">online documentation.</a></p>
 					</Box>
 				</div>
 
@@ -316,11 +350,11 @@ const CaTechnologies = function () {
 					<Box>
 						<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
 							<ul className="list-disc leading-relaxed">
-								<li>Angular</li>
-								<li>LDAP</li>
-								<li>Schema-defined User Interfaces</li>
+								<li>AngularJS</li>
 								<li>Automated browser testing with Istanbul</li>
 								<li>Scrum / Agile</li>
+								<li>Schema-defined User Interfaces</li>
+								<li>LDAP</li>
 							</ul>
 						</div>
 					</Box>
