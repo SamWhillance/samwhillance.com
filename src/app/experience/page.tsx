@@ -137,7 +137,8 @@ const FreelanceWebDeveloper = function () {
 
 			<div className="flex flex-col gap-4">
 
-				<Box>
+				<Box>					
+					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg mt-4" />
 					<H3>bendigobreville.com</H3>
 					<p className="text-sm text-gray-400 mb-4">2025</p>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 5 hours</p>
