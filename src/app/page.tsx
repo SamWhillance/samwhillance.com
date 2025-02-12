@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 justify-around items-center mt-12 w-full">
-            <Image src="/wethrift.png" alt="WeThrift" width={100} height={100} />
+            <Image src="/wethrift.png" alt="WeThrift" width={100} height={100} className="rounded-lg" />
             <Image src="/mphn.png" alt="WeThrift" width={100} height={100} />
             <Image src="/ca.png" alt="WeThrift" width={100} height={100} />
           </div>
