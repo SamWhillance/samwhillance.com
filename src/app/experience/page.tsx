@@ -136,7 +136,7 @@ const SavingsExpert = function () {
 		<Box>				
 					<p>I've appeared in articles offering my "expertise" on saving money and other commerce related topics.</p>
 
-					<div className="flex flex-row gap-4 mt-4 mb-4">
+					<div className="flex flex-row flex-wrap gap-4 mt-4 mb-4">
 						<Image src="/yahoo.png" alt="Yahoo" width={100} height={0}  />
 						<Image src="/the_sun.png" alt="The Sun" width={100} height={0}  />
 						<Image src="/metro.svg" alt="Metro.co.uk" width={100} height={0}  />
@@ -145,13 +145,13 @@ const SavingsExpert = function () {
 
 					<p>Here are some of the articles I've been featured in:</p>
 					<ul className="list-disc leading-relaxed pl-4 text-sm">
-						<li><a href="https://ca.style.yahoo.com/6-ways-spend-less-christmas-080000662.html" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://ca.style.yahoo.com/6-ways-spend-less-christmas-080000662.html</a></li>
-						<li><a href="https://www.thesun.co.uk/money/19945889/discount-expert-bag-water-freezer-save-energy-costs" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.thesun.co.uk/money/19945889/discount-expert-bag-water-freezer-save-energy-costs</a></li>
-						<li><a href="https://metro.co.uk/2022/10/03/ten-easy-ways-to-save-money-from-the-comfort-of-your-couch-17488662/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://metro.co.uk/2022/10/03/ten-easy-ways-to-save-money-from-the-comfort-of-your-couch-17488662/</a></li>
-						<li><a href="https://www.retailtechnologyreview.com/articles/2022/08/09/customer-data-concerns-6-ways-online-shoppers-can-spot-a-fake-website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.retailtechnologyreview.com/articles/2022/08/09/customer-data-concerns-6-ways-online-shoppers-can-spot-a-fake-website/</a></li>
-						<li><a href="https://www.kidspot.com.au/lifestyle/money/five-money-saving-hacks-for-washing-and-ironing-your-clothes/news-story/1917b94a58d30623dac126db7db89154" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.kidspot.com.au/lifestyle/money/five-money-saving-hacks-for-washing-and-ironing-your-clothes/news-story/1917b94a58d30623dac126db7db89154</a></li>
-						<li><a href="https://www.the-sun.com/money/6163291/money-saving-kitchen-appliance-hack-freezer/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.the-sun.com/money/6163291/money-saving-kitchen-appliance-hack-freezer/</a></li>
-						<li><a href="https://www.nottinghampost.com/news/cost-of-living/save-hundreds-energy-bills-avoiding-8272059" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://www.nottinghampost.com/news/cost-of-living/save-hundreds-energy-bills-avoiding-8272059</a></li>
+						<li><a href="https://ca.style.yahoo.com/6-ways-spend-less-christmas-080000662.html" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">ca.style.yahoo.com</a></li>
+						<li><a href="https://www.thesun.co.uk/money/19945889/discount-expert-bag-water-freezer-save-energy-costs" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">www.thesun.co.uk/money</a></li>
+						<li><a href="https://metro.co.uk/2022/10/03/ten-easy-ways-to-save-money-from-the-comfort-of-your-couch-17488662/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">metro.co.uk</a></li>
+						<li><a href="https://www.retailtechnologyreview.com/articles/2022/08/09/customer-data-concerns-6-ways-online-shoppers-can-spot-a-fake-website/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">retailtechnologyreview.com</a></li>
+						<li><a href="https://www.kidspot.com.au/lifestyle/money/five-money-saving-hacks-for-washing-and-ironing-your-clothes/news-story/1917b94a58d30623dac126db7db89154" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">kidspot.com.au</a></li>
+						<li><a href="https://www.the-sun.com/money/6163291/money-saving-kitchen-appliance-hack-freezer/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">the-sun.com</a></li>
+						<li><a href="https://www.nottinghampost.com/news/cost-of-living/save-hundreds-energy-bills-avoiding-8272059" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">nottinghampost.com</a></li>
 					</ul>
 				</Box>
 		</Listing>
@@ -165,7 +165,7 @@ const FreelanceWebDeveloper = function () {
 			<div className="flex flex-col gap-4">
 
 				<Box>					
-					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg mt-4" />
+					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg" />
 					<H3>bendigobreville.com</H3>
 					<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
 
@@ -192,7 +192,7 @@ const FreelanceWebDeveloper = function () {
 				</Box>
 
 				<Box>
-					<Image src="/racketroles.png" alt="Racket Roles Logo" width={100} height={0} className="rounded-lg mt-4" />
+					<Image src="/racketroles.png" alt="Racket Roles Logo" width={100} height={0} className="rounded-lg" />
 					<H3>Racket Roles</H3>
 					<a href="https://play.racketroles.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">racketroles.com</a>
 					<p className="text-sm text-gray-400 mb-4">2025</p>
@@ -210,7 +210,7 @@ const FreelanceWebDeveloper = function () {
 				</Box>
 
 				<Box>
-					<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg mt-4 mb-4" />
+					<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg mb-4" />
 					<a href="https://vatmengroup.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">vatmengroup.com.au</a>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 22 hours</p>
 					<p className="text-sm text-gray-400 mb-4">2024</p>
@@ -226,7 +226,7 @@ const FreelanceWebDeveloper = function () {
 				</Box>
 
 				<Box>
-					<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mt-4 mb-4" />
+					<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mb-4" />
 					<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">gallowaybuilders.com.au</a>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 10 hours</p>
 					<p className="text-sm text-gray-400 mb-4">2024</p>
