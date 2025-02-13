@@ -25,9 +25,9 @@ export default function Nav() {
             </div>
 
             <div className="flex flex-col md:flex-row gap-4 flex-wrap">
-                <NavLink href="/education">Education</NavLink>
-                <NavLink href="/experience">Experience</NavLink>
+            <NavLink href="/experience">Experience</NavLink>
                 <NavLink href="/skills">Skills</NavLink>
+                <NavLink href="/education">Education</NavLink>
                 <NavLink href="/about">About</NavLink>
             </div>
 

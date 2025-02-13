@@ -22,7 +22,7 @@ export default function Home() {
                     <div className="text-3xl font-bold flex flex-col items-start md:items-center gap-2">
                         <h1 className="text-2xl mb-12">Contact Me</h1>
                         <div className="flex flex-col gap-8 pl-4">
-                            <ContactMethod title="Email" value="samwhillance@gmail.com" href="mailto:samwhillance@gmail.com" />
+                            <ContactMethod title="Email" value="hello@samwhillance.com" href="mailto:hello@samwhillance.com" />
                             {/* <ContactMethod title="Phone" value="+61 6838 5315" href="tel:+61468385315" /> */}
                             <ContactMethod title="LinkedIn" value="linkedin.com/in/samwhillance" href="https://www.linkedin.com/in/samwhillance/" />
                             <ContactMethod title="GitHub" value="github.com/samwhillance" href="https://github.com/samwhillance" />
