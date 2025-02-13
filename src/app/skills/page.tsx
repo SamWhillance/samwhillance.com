@@ -43,8 +43,17 @@ export default function Skills() {
 									<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 										{categorySkills.sort((a, b) => b.value - a.value).map((skill) => (
 											<div key={skill.name} className="p-4 border rounded-lg border-gray-700">
-												<div className="flex flex-col gap-2">
+												<div className="flex flex-col gap-2 justify-between h-full">
 													<div className="text-lg font-semibold">{skill.name}</div>
+													{skill.links && (
+														<div className="flex flex-wrap gap-2">
+															{skill.links.map((link) => (
+																<a href={link} key={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+																	{link}
+																</a>
+															))}
+														</div>
+													)}
 													<div className="w-full bg-gray-200 rounded-full h-2.5">
 														<div
 															className="bg-blue-600 h-2.5 rounded-full progress-bar"
@@ -98,7 +107,6 @@ const skills: Skill[] = [
 	{ name: 'Angular', value: 5, category: 'Web' },
 	{ name: 'Cloudflare', value: 7, category: 'Web' },
 	{ name: 'jQuery', value: 8, category: 'Web' },
-	{ name: 'Design', value: 7, category: 'Web' },
 	{ name: 'JSX', value: 8, category: 'Web' },
 	{ name: 'Docker', value: 3, category: 'Web' },
 	{ name: 'NPM', value: 7, category: 'Web' },
@@ -107,17 +115,20 @@ const skills: Skill[] = [
 	{ name: 'Puppeteer', value: 7, category: 'Web' },
 	{ name: 'Chrome Extensions', value: 7, category: 'Web' },
 	{ name: 'Leaflet', value: 5, category: 'Web' },
-	{ name: 'Bootstrap', value: 7, category: 'Web' },
-	{ name: 'Material UI', value: 7, category: 'Web' },
-	{ name: 'Responsive design', value: 8, category: 'Web' },
 	{ name: 'D3.js', value: 7, category: 'Web' },
-	{ name: 'Tailwind', value: 7, category: 'Web' },
 	{ name: 'SEO', value: 5, category: 'Web' },
 	{ name: 'SSG/SSR', value: 6, category: 'Web' },
 	{ name: 'Design principles', value: 7, category: 'Web' },
-	{ name: 'UX/UI', value: 7, category: 'Web' },
 	{ name: 'Web Performance', value: 7, category: 'Web' },
-	{ name: 'User Experience', value: 7, category: 'Web' },
+
+	// CSS
+	{ name: 'Bootstrap', value: 7, category: 'Web' },
+	{ name: 'Design', value: 7, category: 'Web' },
+	{ name: 'Tailwind CSS', value: 7, category: 'Design & CSS', links: [ 'https://samwhillance.com', 'https://bendigobreville.com' ] },
+	{ name: 'Material UI', value: 7, category: 'Design & CSS' },
+	{ name: 'UX & UI', value: 7, category: 'Web' },
+	{ name: 'Responsive design', value: 8, category: 'Web' },
+	{ name: 'Inline Styles (SX)', value: 8, category: 'Web' },
 
 	// API
 	{ name: 'Express', value: 7, category: 'API' },
@@ -127,6 +138,7 @@ const skills: Skill[] = [
 	{ name: 'Apache', value: 3, category: 'Web' },
 	{ name: 'Nginx', value: 3, category: 'Web' },
 	{ name: 'Slack API', value: 4, category: 'API' },
+	{ name: 'Swagger', value: 6, category: 'API', links: [ 'https://learn-nestjs-iota.vercel.app/' ] },
 
 	// Database
 	{ name: 'DynamoDB', value: 7, category: 'Database' },
