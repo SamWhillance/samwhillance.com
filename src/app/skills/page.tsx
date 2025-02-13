@@ -73,6 +73,7 @@ type Skill = {
 	name: string
 	value: number
 	category: string
+	links?: string[]
 }
 
 const skills: Skill[] = [
@@ -94,14 +95,11 @@ const skills: Skill[] = [
 	{ name: 'Solid.js', value: 8, category: 'Web' },
 	{ name: 'Node.js', value: 9, category: 'Web' },
 	{ name: 'TypeScript', value: 6, category: 'Web' },
-	{ name: 'Express', value: 7, category: 'Web' },
 	{ name: 'Angular', value: 5, category: 'Web' },
 	{ name: 'Cloudflare', value: 7, category: 'Web' },
 	{ name: 'jQuery', value: 8, category: 'Web' },
 	{ name: 'Design', value: 7, category: 'Web' },
 	{ name: 'JSX', value: 8, category: 'Web' },
-	{ name: 'Nginx', value: 3, category: 'Web' },
-	{ name: 'Apache', value: 3, category: 'Web' },
 	{ name: 'Docker', value: 3, category: 'Web' },
 	{ name: 'NPM', value: 7, category: 'Web' },
 	{ name: 'Azure', value: 4, category: 'Web' },
@@ -120,6 +118,15 @@ const skills: Skill[] = [
 	{ name: 'UX/UI', value: 7, category: 'Web' },
 	{ name: 'Web Performance', value: 7, category: 'Web' },
 	{ name: 'User Experience', value: 7, category: 'Web' },
+
+	// API
+	{ name: 'Express', value: 7, category: 'API' },
+	{ name: 'REST APIs', value: 7, category: 'Networking' },
+	{ name: 'OpenAI API', value: 6, category: 'API' },
+	{ name: 'NestJS', value: 4, category: 'API', links: [ 'https://learn-nestjs-iota.vercel.app/' ] },
+	{ name: 'Apache', value: 3, category: 'Web' },
+	{ name: 'Nginx', value: 3, category: 'Web' },
+	{ name: 'Slack API', value: 4, category: 'API' },
 
 	// Database
 	{ name: 'DynamoDB', value: 7, category: 'Database' },
@@ -150,7 +157,6 @@ const skills: Skill[] = [
 
 	// Networking
 	{ name: 'DNS configuration', value: 6, category: 'Networking' },
-	{ name: 'REST APIs', value: 7, category: 'Networking' },
 	{ name: 'Routers', value: 6, category: 'Networking' },
 	{ name: 'Subnetting', value: 2, category: 'Networking' },
 
