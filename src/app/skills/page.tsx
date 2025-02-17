@@ -88,20 +88,20 @@ type Skill = {
 const skills: Skill[] = [
 	// Languages
 	{ name: 'JavaScript', value: 9, category: 'Languages' },
-	{ name: 'CSS', value: 8, category: 'Languages' },
+	{ name: 'CSS', value: 9, category: 'Languages' },
 	{ name: 'HTML', value: 9, category: 'Languages' },
 	{ name: 'PHP', value: 2, category: 'Languages' },
 	{ name: 'C', value: 2, category: 'Languages' },
 	{ name: 'C++', value: 2, category: 'Languages' },
 	{ name: 'C#', value: 2, category: 'Languages' },
 	{ name: 'Java', value: 4, category: 'Languages' },
-	{ name: 'Python', value: 2, category: 'Languages' },
+	{ name: 'Python', value: 3, category: 'Languages' },
 	{ name: 'SQL', value: 3, category: 'Languages' },
 	{ name: 'GML', value: 8, category: 'Languages' },
 
 	// Web
 	{ name: 'React', value: 9, category: 'Web' },
-	{ name: 'Solid.js', value: 8, category: 'Web' },
+	{ name: 'Solid.js', value: 7, category: 'Web' },
 	{ name: 'Node.js', value: 9, category: 'Web' },
 	{ name: 'TypeScript', value: 6, category: 'Web' },
 	{ name: 'Angular', value: 5, category: 'Web' },
@@ -115,7 +115,7 @@ const skills: Skill[] = [
 	{ name: 'Puppeteer', value: 7, category: 'Web' },
 	{ name: 'Chrome Extensions', value: 7, category: 'Web' },
 	{ name: 'Leaflet', value: 5, category: 'Web' },
-	{ name: 'D3.js', value: 7, category: 'Web' },
+	{ name: 'D3.js', value: 6, category: 'Web' },
 	{ name: 'SEO', value: 5, category: 'Web' },
 	{ name: 'SSG/SSR', value: 6, category: 'Web' },
 	{ name: 'Design principles', value: 7, category: 'Web' },
@@ -145,11 +145,12 @@ const skills: Skill[] = [
 	{ name: 'AWS S3', value: 7, category: 'Database' },
 	{ name: 'MongoDB', value: 3, category: 'Database' },
 	{ name: 'LDAP', value: 2, category: 'Database' },
+	{ name: 'SQLite', value: 3, category: 'Database' },
 	{ name: 'Relational Databases', value: 4, category: 'Database' },
 	{ name: 'ERDs', value: 5, category: 'Database' },
 
 	// Dev Ops
-	{ name: 'Continuous Integration (CI) & deployment (CD)', value: 6, category: 'Dev Ops' },
+	{ name: 'CI / CD', value: 6, category: 'Dev Ops' },
 	{ name: 'GitHub', value: 8, category: 'Dev Ops' },
 	{ name: 'Automated Testing', value: 7, category: 'Dev Ops' },
 
