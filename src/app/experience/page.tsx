@@ -6,7 +6,6 @@ import PageContainer from '../../components/page_container'
 import VideoPlayer from '../../components/video_player'
 
 export default function Experience() {
-
 	return (
 		<PageContainer>
 			<ContentContainer>
@@ -45,7 +44,7 @@ const Listing = function ({ h1, h2, line1, line2, image, children, linkedin }:
 
 const Box = function ({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="flex flex-col border border-white/25 text-white/75 bg-black/50 p-4 rounded-lg">
+		<div className="flex flex-col border border-black/10 text-black/80 bg-gray-100 p-4 rounded-lg">
 			{children}
 		</div>
 	)
@@ -55,9 +54,7 @@ const Box = function ({ children }: { children: React.ReactNode }) {
 const Wethrift = function () {
 	return (
 		<Listing image="/wethrift.png" h1="WeThrift" h2="Full Stack Software Engineer" line1="2022 - Present" line2="Remote" linkedin="wethrift">
-			<Box>
-				<p>Joining WeThrift in 2022, my expertise in AI-powered technology revolutionized the way WeThrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
-			</Box>
+			<p>Joining WeThrift in 2022, my expertise in AI-powered technology revolutionized the way WeThrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
 
 			<Image src="/wethrift_team.webp" alt="WeThrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
 
@@ -226,7 +223,7 @@ const FreelanceWebDeveloper = function () {
 				</Box>
 
 				<Box>
-					<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mb-4" />
+					<Image src="/galloway_black.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mb-4" />
 					<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">gallowaybuilders.com.au</a>
 					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 10 hours</p>
 					<p className="text-sm text-gray-400 mb-4">2024</p>
@@ -246,7 +243,7 @@ const FreelanceWebDeveloper = function () {
 
 const CrmDeveloper = function () {
 	return (
-		<Listing image="/mphn.png" h1="Murray PHN" h2="Systems Developer & Support (CRM)" line1="2017 - 2022" line2="Bendigo & Remote" linkedin="murray-phn">
+		<Listing image="/mphn.webp" h1="Murray PHN" h2="Systems Dev & Support (CRM)" line1="2017 - 2022" line2="Bendigo & Remote" linkedin="murray-phn">
 			<div className="flex flex-col gap-4">
 
 				<div>

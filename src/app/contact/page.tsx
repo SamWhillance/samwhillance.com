@@ -29,8 +29,6 @@ export default function Home() {
                             <ContactMethod title="In person, year 1985" value="Twin Pines Mall, Hill Valley" href="https://maps.app.goo.gl/PseUJrFDBD7ENk4MA" />
                         </div>
                     </div>
-                    <br />
-                    <p className="text-lg">Build <span className="italic font-bold">Fast</span>. Build <span className="text-cyan-400 font-bold">Smart</span>.</p>
                 </div>
             </ContentContainer>
         </PageContainer >

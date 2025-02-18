@@ -8,10 +8,10 @@ export default function PageContainer({ children }: { children: React.ReactNode 
                 <div className="ml-auto mr-auto">
                     <Nav />
                     {children}
+                    <Footer />
                 </div>
             </div>
 
-            <Footer />
         </div>
     )
 }

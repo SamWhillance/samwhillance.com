@@ -6,7 +6,7 @@ import NavLink from "./nav_link";
 export default function Nav() {
 
     return (
-        <div className="flex flex-col md:flex-row m-8 gap-8 text-white justify-between">
+        <div className="flex flex-col md:flex-row m-8 gap-8 text-black justify-between">
             <div className="flex">
                 <Link href="/" className="mr-4 w-16">
                     <Image
@@ -19,7 +19,7 @@ export default function Nav() {
                         priority
                     />
                 </Link>
-                <div id="sam_whillance" className="md:hidden flex flex-nowrap whitespace-nowrap text-2xl font-bold text-white mt-auto mb-auto">
+                <div id="sam_whillance" className="md:hidden flex flex-nowrap whitespace-nowrap text-2xl font-bold text-black mt-auto mb-auto">
                     Samuel Whillance
                 </div>
             </div>

@@ -42,7 +42,7 @@ export default function Skills() {
 									<h2 className="text-2xl font-bold">{category}</h2>
 									<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 										{categorySkills.sort((a, b) => b.value - a.value).map((skill) => (
-											<div key={skill.name} className="p-4 border rounded-lg border-gray-700">
+											<div key={skill.name} className="p-4 border rounded-2xl border-gray-200 bg-white shadow-lg">
 												<div className="flex flex-col gap-2 justify-between h-full">
 													<div className="text-lg font-semibold">{skill.name}</div>
 													{skill.links && (
