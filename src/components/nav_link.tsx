@@ -11,14 +11,14 @@ const NavLink = ({ href, children }: NavLinkProps) => {
       href={href}
       className="
         inline-block px-6 py-4
-        bg-white/30 hover:bg-white/50
+        bg-blue-100/30 hover:bg-blue-200/50
         backdrop-blur-md
         rounded-2xl
-        text-black
+        text-blue-50
         text-lg font-medium
         no-underline
         transition-all duration-100
-        border border-white/20
+        border border-blue-200/20
         shadow-lg hover:shadow-xl
         hover:-translate-y-0.5
       "

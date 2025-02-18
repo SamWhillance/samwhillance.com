@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #040B14;  /* Darker blue background */
+  --foreground: #E6F1FF;  /* Light blue-tinted text */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -15,19 +15,19 @@
 body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  background: #0a0a0a;
+  background: #040B14;
 }
 
 #page {
-  background: #ff99b6;
+  background: #163465;
   background-image:
-    radial-gradient(at 18% 9%, hsla(297, 71%, 64%, 1) 0px, transparent 50%),
-    radial-gradient(at 38% 59%, hsla(68, 70%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 77% 85%, hsla(144, 81%, 66%, 1) 0px, transparent 50%),
-    radial-gradient(at 19% 80%, hsla(139, 88%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 12% 79%, hsla(357, 75%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 93% 84%, hsla(257, 73%, 65%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
+    radial-gradient(at 18% 9%, hsla(217, 71%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 38% 59%, hsla(200, 70%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 77% 85%, hsla(190, 81%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 80%, hsla(210, 88%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 12% 79%, hsla(225, 75%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 93% 84%, hsla(195, 73%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 97%, hsla(205, 73%, 71%, 1) 0px, transparent 50%);
 }
 
 #page>div {
@@ -36,23 +36,20 @@ body {
 }
 
 .progress-bar {
-  background: #ff99b6;
-  background-image:
-    radial-gradient(at 18% 9%, hsla(297, 71%, 64%, 1) 0px, transparent 50%),
-    radial-gradient(at 93% 84%, hsla(257, 73%, 65%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 97%, hsla(320, 73%, 71%, 1) 0px, transparent 50%);
+  background:hsla(217, 71%, 64%, 1);
+  background-image: hsla(217, 71%, 64%, 1);
 }
 
 #content-container {
-  background-color: hsla(341, 0%, 0%, 1);
+  background-color: hsla(217, 32%, 17%, 1);
   background-image:
-    radial-gradient(at 23% 52%, hsla(259, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 71% 58%, hsla(335, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 40% 75%, hsla(183, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 15% 97%, hsla(271, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 68% 21%, hsla(359, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 55% 39%, hsla(149, 16%, 17%, 1) 0px, transparent 50%),
-    radial-gradient(at 49% 35%, hsla(165, 16%, 17%, 1) 0px, transparent 50%);
+    radial-gradient(at 23% 52%, hsla(220, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 71% 58%, hsla(210, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 40% 75%, hsla(200, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 15% 97%, hsla(230, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 68% 21%, hsla(195, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 55% 39%, hsla(205, 32%, 17%, 1) 0px, transparent 50%),
+    radial-gradient(at 49% 35%, hsla(225, 32%, 17%, 1) 0px, transparent 50%);
 }
 
 #sam_whillance2 {
