@@ -82,6 +82,7 @@ type Skill = {
 	name: string
 	value: number
 	category: string
+	new?: boolean
 	links?: string[]
 }
 
@@ -96,16 +97,18 @@ const skills: Skill[] = [
 	{ name: 'C#', value: 2, category: 'Languages' },
 	{ name: 'Java', value: 4, category: 'Languages' },
 	{ name: 'Python', value: 3, category: 'Languages' },
-	{ name: 'SQL', value: 3, category: 'Languages' },
+	{ name: 'SQL', value: 4, category: 'Languages' },
 	{ name: 'GML', value: 8, category: 'Languages' },
 
 	// Web
 	{ name: 'React', value: 9, category: 'Web' },
 	{ name: 'Solid.js', value: 7, category: 'Web' },
 	{ name: 'Node.js', value: 9, category: 'Web' },
-	{ name: 'TypeScript', value: 6, category: 'Web' },
+	{ name: 'TypeScript', value: 7, category: 'Web', new: true },
 	{ name: 'Angular', value: 5, category: 'Web' },
 	{ name: 'Cloudflare', value: 7, category: 'Web' },
+	{ name: 'Cloudflare (Workers)', value: 7, category: 'Web', new: true },
+	{ name: 'Cloudflare (Queues)', value: 7, category: 'Web', new: true },
 	{ name: 'jQuery', value: 8, category: 'Web' },
 	{ name: 'JSX', value: 8, category: 'Web' },
 	{ name: 'Docker', value: 3, category: 'Web' },
@@ -124,7 +127,7 @@ const skills: Skill[] = [
 	// CSS
 	{ name: 'Bootstrap', value: 7, category: 'Web' },
 	{ name: 'Design', value: 7, category: 'Web' },
-	{ name: 'Tailwind CSS', value: 7, category: 'Design & CSS', links: [ 'https://samwhillance.com', 'https://bendigobreville.com' ] },
+	{ name: 'Tailwind CSS', value: 7, category: 'Design & CSS', new: true, links: [ 'https://samwhillance.com', 'https://bendigobreville.com' ] },
 	{ name: 'Material UI', value: 7, category: 'Design & CSS' },
 	{ name: 'UX & UI', value: 7, category: 'Web' },
 	{ name: 'Responsive design', value: 8, category: 'Web' },
@@ -134,15 +137,19 @@ const skills: Skill[] = [
 	{ name: 'Express', value: 7, category: 'API' },
 	{ name: 'REST APIs', value: 7, category: 'Networking' },
 	{ name: 'OpenAI API', value: 6, category: 'API' },
-	{ name: 'NestJS', value: 4, category: 'API', links: [ 'https://learn-nestjs-iota.vercel.app/' ] },
+	{ name: 'NestJS', value: 4, category: 'API', links: [ 'https://learn-nestjs-iota.vercel.app/' ], new: true },
 	{ name: 'Apache', value: 3, category: 'Web' },
 	{ name: 'Nginx', value: 3, category: 'Web' },
 	{ name: 'Slack API', value: 4, category: 'API' },
+	{ name: 'Stripe', value: 5, category: 'API', new: true },
 	{ name: 'Swagger', value: 6, category: 'API', links: [ 'https://learn-nestjs-iota.vercel.app/' ] },
 
 	// Database
 	{ name: 'DynamoDB', value: 7, category: 'Database' },
 	{ name: 'AWS S3', value: 7, category: 'Database' },
+	{ name: 'Supabase (PostgreSQL)', value: 4, category: 'Database', new: true },
+	{ name: 'Supabase (Auth)', value: 5, category: 'Database', new: true },
+	{ name: 'Drizzle ORM', value: 3, category: 'Database', new: true },
 	{ name: 'MongoDB', value: 3, category: 'Database' },
 	{ name: 'LDAP', value: 2, category: 'Database' },
 	{ name: 'SQLite', value: 3, category: 'Database' },
@@ -189,7 +196,7 @@ const skills: Skill[] = [
 
 	// Office 365
 	{ name: 'Microsoft Azure', value: 6, category: 'Office 365' },
-	{ name: 'MicrosoftnPowerBI', value: 7, category: 'Office 365' },
+	{ name: 'Microsoft PowerBI', value: 7, category: 'Office 365' },
 	{ name: 'Microsoft Dataverse (CDS)', value: 7, category: 'Office 365' },
 	{ name: 'Microsoft Graph API', value: 7, category: 'Office 365' },
 	{ name: 'Microsoft Power Automate', value: 9, category: 'Office 365' },
