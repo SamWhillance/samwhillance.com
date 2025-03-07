@@ -222,6 +222,36 @@ const BendigoBreville = function () {
 				<li>Manage inventory of specialized Breville parts, minimizing customer wait times.</li>
 			</ul>
 		</Box>
+
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+			<div className="glass-card p-2 transition-all duration-300 hover:scale-105">
+				<Image 
+					src="/brev2.png" 
+					alt="Breville Coffee Machine Repair" 
+					width={400} 
+					height={300} 
+					className="rounded-lg w-full h-full object-cover"
+				/>
+			</div>
+			<div className="glass-card p-2 transition-all duration-300 hover:scale-105">
+				<Image 
+					src="/brev3.png" 
+					alt="Breville Coffee Machine Service" 
+					width={400} 
+					height={300} 
+					className="rounded-lg w-full h-full object-cover"
+				/>
+			</div>
+			<div className="glass-card p-2 transition-all duration-300 hover:scale-105">
+				<Image 
+					src="/brev4.png" 
+					alt="Breville Coffee Machine Maintenance" 
+					width={400} 
+					height={300} 
+					className="rounded-lg w-full h-full object-cover"
+				/>
+			</div>
+		</div>
 	</Listing>
 	)
 }
