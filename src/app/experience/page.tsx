@@ -10,7 +10,9 @@ export default function Experience() {
 	return (
 		<PageContainer>
 			<ContentContainer>
+				<ColorInEmoji />
 				<Wethrift />
+				<BendigoBreville/>
 				<FreelanceWebDeveloper />
 				<SavingsExpert/>
 				<CrmDeveloper />
@@ -48,6 +50,46 @@ const Box = function ({ children }: { children: React.ReactNode }) {
 		<div className="flex flex-col border border-white/25 text-white/75 bg-black/50 p-4 rounded-lg">
 			{children}
 		</div>
+	)
+}
+
+const ColorInEmoji = function () {
+	return (
+		<Listing image="/emoji_wheel.png" h1="ColorinEmoji.com" h2="Founder & Developer" line1="March 2025 - Present" line2="Remote">
+			<Box>
+				<p className="mb-4">
+					<a href="https://colorinemoji.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Color In Emoji</a> is a fun and easy way for kids to create coloring pages just using emojis! Unlike other AI coloring page generators that ask you to write your own text prompt, children can simply click on emojis to generate unique, creative and exciting coloring pages. There are over 200 emojis to choose from, 2 modes, and 2 AI models (as of March 2025).
+					</p>
+					<p> It's:	</p>
+				<div className="flex flex-col pl-4 pr-8">
+					<ul className="list-disc leading-relaxed">
+						<li>Kid-friendly - no typing needed! 🎨</li>
+						<li>Intuitive - so simple even kids can use it! 🧒</li>
+						<li>Super fast - pages ready in seconds ⚡</li>
+						<li>Safe and fun - just pick emojis and print! 🎯</li>
+						<li>Perfect for all ages (and tired parents!) 👶👧👦</li>
+					</ul>
+				</div>
+
+			</Box>
+			<br/>
+			<Box>
+				<p className="mb-4 font-bold">Tech Stack:</p>
+				<div className="flex flex-col pl-4 pr-8">
+				<ul className="list-disc leading-relaxed">
+					<li>React</li>
+					<li>NextJS (App Router)</li>
+					<li>TypeScript</li>
+					<li>Tailwind CSS</li>
+					<li>Cloudflare Workers, Queues, Workers AI</li>
+					<li>Supabase PostgreSQL and Auth</li>
+					<li>Drizzle</li>
+					<li>Vercel</li>
+					<li>Stripe Integration</li>
+				</ul>
+				</div>
+				</Box>
+		</Listing>
 	)
 }
 
@@ -130,6 +172,29 @@ const Wethrift = function () {
 	)
 }
 
+const BendigoBreville = function () {
+	return (
+		<Listing image="/bendigobreville.jpg" h1="Bendigo Breville" h2="Founder & Diretor" line1="2020 - Present" line2="Bendigo, VIC">
+		<Box>					
+			<H3>Bendigo Breville Repairs & Service</H3>
+			<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
+
+			<p className="font-bold mt-6">As the owner-operator of a specialized coffee machine repair business, I provide comprehensive service and repair for the complete range of Breville coffee machines.</p>
+			<br/>
+			<p>Through dedicated self-education and hands-on experience, I've developed expertise across all Breville models, diagnosing and resolving even the most complex technical issues.</p>
+			<br/>
+			<p>Key responsibilities and achievements:</p>
+			<ul className="list-disc leading-relaxed pl-4">
+				<li>Communicate directly with customers to understand their concerns, explain technical issues in accessible language, and provide transparent estimates</li>
+				<li>Maintain a network of fellow Breville technicians throughout Australia, facilitating knowledge sharing and collaborative problem-solving</li>
+				<li>Deliver reliable, high-quality repairs that extend machine lifespan and enhance performance</li>
+				<li>Manage inventory of specialized Breville parts, minimizing customer wait times.</li>
+			</ul>
+		</Box>
+	</Listing>
+	)
+}
+
 const SavingsExpert = function () {
 	return (
 		<Listing image="/savings_expert.png" h1="Savings Expert" line1="2023 - Present" line2="Remote">	
@@ -164,7 +229,7 @@ const FreelanceWebDeveloper = function () {
 
 			<div className="flex flex-col gap-4">
 
-				<Box>					
+			<Box>					
 					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg" />
 					<H3>bendigobreville.com</H3>
 					<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
