@@ -4,6 +4,7 @@ import H3 from '../../components/h3'
 import Image from 'next/image'
 import PageContainer from '../../components/page_container'
 import VideoPlayer from '../../components/video_player'
+import { Server, Code, Database } from 'lucide-react'
 
 export default function Experience() {
 
@@ -36,10 +37,8 @@ const Listing = function ({ h1, h2, line1, line2, image, children, linkedin }:
 	}) {
 	return (
 		<Collapse image={image} h1={h1} h2={h2} line1={line1} line2={line2} h1_link={linkedin}>
-			<div className="flex flex-col md:flex-row w-full">
-				<div className="flex flex-col w-full">
-					{children}
-				</div>
+			<div className="flex flex-col gap-6 w-full">
+				{children}
 			</div>
 		</Collapse>
 	)
@@ -47,7 +46,7 @@ const Listing = function ({ h1, h2, line1, line2, image, children, linkedin }:
 
 const Box = function ({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="flex flex-col border border-white/25 text-white/75 bg-black/50 p-4 rounded-lg">
+		<div className="glass-card p-6 space-y-4 text-text-muted">
 			{children}
 		</div>
 	)
@@ -101,7 +100,39 @@ const Wethrift = function () {
 				<p>Joining WeThrift in 2022, my expertise in AI-powered technology revolutionized the way WeThrift discovered, processed, and published coupons. I built systems that handle over 100,000 pieces of online content daily, contributing to over a million coupons being published annually. I also enhanced the team's developer experience, creating crucial debugging tools, and developed tools to assist with coupon code testing, while enhancing internal dashboards and tools.</p>
 			</Box>
 
-			<Image src="/wethrift_team.webp" alt="WeThrift Team" width={1024} height={0} className="rounded-lg w-full mt-4" />
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+				<div className="glass-card p-6 transition-all duration-300 hover:shadow-xl hover:border-primary-light">
+					<div className="flex items-center mb-4">
+						<div className="p-3 rounded-lg bg-primary/10 mr-4">
+							<Server className="h-6 w-6 text-primary" />
+						</div>
+						<h3 className="text-xl font-bold">Processing</h3>
+					</div>
+					<p className="text-text-muted">Processing over 100,000 pieces of online content daily through AI-powered systems</p>
+				</div>
+
+				<div className="glass-card p-6 transition-all duration-300 hover:shadow-xl hover:border-primary-light">
+					<div className="flex items-center mb-4">
+						<div className="p-3 rounded-lg bg-secondary/10 mr-4">
+							<Code className="h-6 w-6 text-secondary" />
+						</div>
+						<h3 className="text-xl font-bold">Testing</h3>
+					</div>
+					<p className="text-text-muted">Automated testing of 200,000+ coupon codes per day with custom testing infrastructure</p>
+				</div>
+
+				<div className="glass-card p-6 transition-all duration-300 hover:shadow-xl hover:border-primary-light">
+					<div className="flex items-center mb-4">
+						<div className="p-3 rounded-lg bg-accent/10 mr-4">
+							<Database className="h-6 w-6 text-accent" />
+						</div>
+						<h3 className="text-xl font-bold">Scale</h3>
+					</div>
+					<p className="text-text-muted">Contributing to over 1 million coupons being published annually</p>
+				</div>
+			</div>
+
+			<Image src="/wethrift_team.webp" alt="WeThrift Team" width={1024} height={0} className="rounded-lg w-full" />
 
 			<H3>What I worked on</H3>
 			<Box>
@@ -226,85 +257,121 @@ const SavingsExpert = function () {
 const FreelanceWebDeveloper = function () {
 	return (
 		<Listing image="/freelance_web.png" h1="Freelance Web Developer" line1="2024 - Present" line2="Remote">
+			<div className="flex flex-col gap-6">
+				<Box>					
+					<div className="flex flex-col gap-4">
+						<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg" />
+						<div>
+							<H3>bendigobreville.com</H3>
+							<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">bendigobreville.com</a>
+						</div>
+						
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted">2025</p>
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 5 hours</p>
+						</div>
 
-			<div className="flex flex-col gap-4">
-
-			<Box>					
-					<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg" />
-					<H3>bendigobreville.com</H3>
-					<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
-
-					<p className="text-sm text-gray-400 mb-4">2025</p>
-					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 5 hours</p>
-					<p className="font-bold mt-6">Tech:</p>
-					<ul className="list-disc leading-relaxed pl-4">
-						<li>React, Next.js, TypeScript, Tailwind</li>
-						<li>Vercel + Cloudflare</li>
-					</ul>
+						<div className="space-y-2">
+							<p className="font-semibold">Tech:</p>
+							<ul className="list-disc pl-4 space-y-1">
+								<li>React, Next.js, TypeScript, Tailwind</li>
+								<li>Vercel + Cloudflare</li>
+							</ul>
+						</div>
+					</div>
 				</Box>
 
 				<Box>
-					<H3>samwhillance.com (this site)</H3>
-					<p className="text-sm text-gray-400 mb-4">2025</p>
-					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 12 hours</p>
-					<p className="font-bold mt-6">Tech:</p>
-					<ul className="list-disc leading-relaxed pl-4">
-						<li>React, Next.js</li>
-						<li>TypeScript (first time using it)</li>
-						<li>Tailwind (first time using it)</li>
-						<li>Vercel + Cloudflare</li>
-					</ul>
+					<div className="flex flex-col gap-4">
+						<H3>samwhillance.com (this site)</H3>
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted">2025</p>
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 12 hours</p>
+						</div>
+
+						<div className="space-y-2">
+							<p className="font-semibold">Tech:</p>
+							<ul className="list-disc pl-4 space-y-1">
+								<li>React, Next.js</li>
+								<li>TypeScript (first time using it)</li>
+								<li>Tailwind (first time using it)</li>
+								<li>Vercel + Cloudflare</li>
+							</ul>
+						</div>
+					</div>
 				</Box>
 
 				<Box>
-					<Image src="/racketroles.png" alt="Racket Roles Logo" width={100} height={0} className="rounded-lg" />
-					<H3>Racket Roles</H3>
-					<a href="https://play.racketroles.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">racketroles.com</a>
-					<p className="text-sm text-gray-400 mb-4">2025</p>
+					<div className="flex flex-col gap-4">
+						<Image src="/racketroles.png" alt="Racket Roles Logo" width={100} height={0} className="rounded-lg" />
+						<div>
+							<H3>Racket Roles</H3>
+							<a href="https://play.racketroles.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">racketroles.com</a>
+						</div>
 
-					<p className="italic">"Tennis, transformed! Activate legendary player cards to mix up your real-life tennis matches with unique rule modifiers. Elevate your game with iconic moves and strategies."</p>
-					<br />
-					<p>This was a passion project of mine, developed over several months. Originally built using Vite, I quickly ported it to Next.js. Hosted on Vercel. Designed primarly with mobile devices in mind.</p>
+						<div className="space-y-4">
+							<p className="text-sm text-text-muted">2025</p>
+							<p className="italic">"Tennis, transformed! Activate legendary player cards to mix up your real-life tennis matches with unique rule modifiers. Elevate your game with iconic moves and strategies."</p>
+							<p>This was a passion project of mine, developed over several months. Originally built using Vite, I quickly ported it to Next.js. Hosted on Vercel. Designed primarly with mobile devices in mind.</p>
+						</div>
 
-					<p className="font-bold mt-6">Tech:</p>
-					<ul className="list-disc leading-relaxed pl-4">
-						<li>React, Next.js</li>
-						<li>Vercel</li>
-						<li>Cloudflare</li>
-					</ul>
+						<div className="space-y-2">
+							<p className="font-semibold">Tech:</p>
+							<ul className="list-disc pl-4 space-y-1">
+								<li>React, Next.js</li>
+								<li>Vercel</li>
+								<li>Cloudflare</li>
+							</ul>
+						</div>
+					</div>
 				</Box>
 
 				<Box>
-					<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg mb-4" />
-					<a href="https://vatmengroup.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">vatmengroup.com.au</a>
-					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 22 hours</p>
-					<p className="text-sm text-gray-400 mb-4">2024</p>
-					<ul className="list-disc leading-relaxed pl-4">
-						<li>Commercial cleaning company, already knew the owner through family</li>
-						<li>Converted the original WordPress site to React/Next.js</li>
-						<li>Modernised the design, added mobile responsiveness</li>
-						<li>Email delivery via Postmark</li>
-						<li>Deployed using Digital Ocean (linux)</li>
-						<li>Custom nginx config</li>
-						<li>Automatic deploys from git pushes</li>
-					</ul>
+					<div className="flex flex-col gap-4">
+						<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg" />
+						<div>
+							<a href="https://vatmengroup.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">vatmengroup.com.au</a>
+						</div>
+
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 22 hours</p>
+							<p className="text-sm text-text-muted">2024</p>
+						</div>
+
+						<ul className="list-disc pl-4 space-y-1">
+							<li>Commercial cleaning company, already knew the owner through family</li>
+							<li>Converted the original WordPress site to React/Next.js</li>
+							<li>Modernised the design, added mobile responsiveness</li>
+							<li>Email delivery via Postmark</li>
+							<li>Deployed using Digital Ocean (linux)</li>
+							<li>Custom nginx config</li>
+							<li>Automatic deploys from git pushes</li>
+						</ul>
+					</div>
 				</Box>
 
 				<Box>
-					<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg mb-4" />
-					<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">gallowaybuilders.com.au</a>
-					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 10 hours</p>
-					<p className="text-sm text-gray-400 mb-4">2024</p>
-					<ul className="list-disc leading-relaxed pl-4">
-						<li>Friend's construction business</li>
-						<li>Hosted on Heroku</li>
-						<li>Cloudflare routing</li>
-						<li>React, Next.js</li>
-						<li>Automatic deploys from git pushes</li>
-					</ul>
+					<div className="flex flex-col gap-4">
+						<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg" />
+						<div>
+							<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">gallowaybuilders.com.au</a>
+						</div>
+
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 10 hours</p>
+							<p className="text-sm text-text-muted">2024</p>
+						</div>
+
+						<ul className="list-disc pl-4 space-y-1">
+							<li>Friend's construction business</li>
+							<li>Hosted on Heroku</li>
+							<li>Cloudflare routing</li>
+							<li>React, Next.js</li>
+							<li>Automatic deploys from git pushes</li>
+						</ul>
+					</div>
 				</Box>
 			</div>
-
 		</Listing>
 	)
 }
@@ -312,41 +379,41 @@ const FreelanceWebDeveloper = function () {
 const CrmDeveloper = function () {
 	return (
 		<Listing image="/mphn.png" h1="Murray PHN" h2="Systems Developer & Support (CRM)" line1="2017 - 2022" line2="Bendigo & Remote" linkedin="murray-phn">
-			<div className="flex flex-col gap-4">
-
+			<div className="flex flex-col gap-6">
 				<div>
 					<H3>Overview</H3>
 					<Box>
-						Since 2017, Murray PHN has been completely transformed as a company and is now considered one of the leading PHNs in terms of technology and innovation.
-
-						Initially contracted, became permanent. Job was to rebuild their CRM. I met with key staff to document processes & identify software requirements. I undertook evidence-based research to map business requirements with competing CRM platforms. The original CRM, which was primarily an account/contact metadata warehouse, was expanded into a broad, integrated Business Intelligence platform which manages data & assets in ways we didn't foresee, across many business areas such as governance, people & culture, finance, reporting, quality, risk, data and systems.
+						<p className="leading-relaxed">
+							Since 2017, Murray PHN has been completely transformed as a company and is now considered one of the leading PHNs in terms of technology and innovation.
+						</p>
+						<p className="leading-relaxed">
+							Initially contracted, became permanent. Job was to rebuild their CRM. I met with key staff to document processes & identify software requirements. I undertook evidence-based research to map business requirements with competing CRM platforms. The original CRM, which was primarily an account/contact metadata warehouse, was expanded into a broad, integrated Business Intelligence platform which manages data & assets in ways we didn't foresee, across many business areas such as governance, people & culture, finance, reporting, quality, risk, data and systems.
+						</p>
 					</Box>
 				</div>
 
 				<div>
 					<H3>I built these features into the CRM</H3>
 					<Box>
-						<div className="flex flex-col pl-4 pr-4">
-							<ul className="list-disc leading-relaxed">
-								<li>Enterprise-wide risk assessments, including counterparty risk framework</li>
-								<li>Regulation register. Controlled documents (Policies, Procedures, etc.)</li>
-								<li>Incident response (WHS, Cybersecurity, Data Quality & Breaches)</li>
-								<li>Business processes, mapped to other entities and company assets</li>
-								<li>Tracking company KPIs and associated data</li>
-								<li>Software, hardware and device management</li>
-								<li>Internal request/ticketing system</li>
-								<li> Geographical data (Suburbs, Statistical Areas, Postcodes, etc)</li>
-								<li>Event management with custom EventBrite integration</li>
-								<li>Insight and report generation using the PowerBI platform</li>
-							</ul>
-						</div>
+						<ul className="list-disc pl-4 space-y-2">
+							<li>Enterprise-wide risk assessments, including counterparty risk framework</li>
+							<li>Regulation register. Controlled documents (Policies, Procedures, etc.)</li>
+							<li>Incident response (WHS, Cybersecurity, Data Quality & Breaches)</li>
+							<li>Business processes, mapped to other entities and company assets</li>
+							<li>Tracking company KPIs and associated data</li>
+							<li>Software, hardware and device management</li>
+							<li>Internal request/ticketing system</li>
+							<li>Geographical data (Suburbs, Statistical Areas, Postcodes, etc)</li>
+							<li>Event management with custom EventBrite integration</li>
+							<li>Insight and report generation using the PowerBI platform</li>
+						</ul>
 					</Box>
 				</div>
 
 				<div>
 					<H3>What I worked on</H3>
 					<Box>
-						<ul className="pl-4 pr-4 list-disc leading-relaxed">
+						<ul className="list-disc pl-4 space-y-2">
 							<li>Developed in-house web applications, such as an internal 'staff hub' integrated into Dynamics 365 and the Microsoft Graph API.</li>
 							<li>built CRM integrated HTML5 software solutions, deployed on the Azure cloud environment with continuous deployment processes utilizing Git and Visual Studio Code. Some projects required their own web server (usually ExpressJS), which authenticated with the Microsoft Dynamics and Graph APIs.</li>
 							<li>I migrated another Primary Health Network from ChilliDB to a custom Dynamics 365 solution we had built in-house. This included ongoing support and customization of their CRM solution.</li>
@@ -358,18 +425,16 @@ const CrmDeveloper = function () {
 				<div>
 					<H3>Skills I Acquired</H3>
 					<Box>
-						<div className="flex flex-col md:flex-row md:gap-8 justify-between pl-4 pr-4">
-							<ul className="list-disc leading-relaxed">
-								<li>Angular</li>
-								<li>Microsoft Dynamics 365</li>
-								<li>Microsoft Graph API</li>
-								<li>Microsoft Azure</li>
-								<li>Sharepoint</li>
-								<li>PowerBI</li>
-								<li>Power Automate</li>
-								<li>Power Apps</li>
-							</ul>
-						</div>
+						<ul className="list-disc pl-4 space-y-2">
+							<li>Angular</li>
+							<li>Microsoft Dynamics 365</li>
+							<li>Microsoft Graph API</li>
+							<li>Microsoft Azure</li>
+							<li>Sharepoint</li>
+							<li>PowerBI</li>
+							<li>Power Automate</li>
+							<li>Power Apps</li>
+						</ul>
 					</Box>
 				</div>
 			</div>
@@ -433,64 +498,74 @@ const CaTechnologies = function () {
 const FreelanceGameDeveloper = function () {
 	return (
 		<Listing image="/juicycraft.png" h1="Freelance Game Developer" line1="2015 - 2017" line2="Remote">
-			<div className="flex flex-col gap-4 w-full">
-
+			<div className="flex flex-col gap-6 w-full">
 				<Collapse image={'/t20.webp'} h1={"T20 Card Cricket"} line1={"iOS and Android"} line2={'2017'}>
-					<div className="flex flex-col gap-4 w-full">
+					<div className="flex flex-col gap-6">
+						<Box>
+							<div className="flex flex-col gap-4">
+								<p className="italic">"The cricket card-matching game that improves your concentration! Match cards, hit runs and score tons in this card-matching, cricket-themed matching game that improves your concentration!"</p>
 
-						<p className="italic">"The cricket card-matching game that improves your concentration! Match cards, hit runs and score tons in this card-matching, cricket-themed matching game that improves your concentration!"</p>
+								<p>Built for a passionate Cricket client in New Zealand, this project spanned 3 years, working on it in our spare time.</p>
 
-						<p>Built for a passionate Cricket client in New Zealand, this project spanned 3 years, working on it in our spare time.</p>
+								<p>The game was built using GameMaker Studio, which allows developers to publish games to multiple platforms from a single codebase.</p>
 
-						<p>The game was built using GameMaker Studio, which allows developers to publish games to multiple platforms from a single codebase.</p>
+								<a href="https://apps.apple.com/gb/app/t20-card-cricket/id1290542871" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">View on the App Store</a>
 
-						<a href="https://apps.apple.com/gb/app/t20-card-cricket/id1290542871" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View on the App Store</a>
-
-						<VideoPlayer url="https://www.youtube.com/watch?v=b1-UuWkaeno" />
+								<VideoPlayer url="https://www.youtube.com/watch?v=b1-UuWkaeno" />
+							</div>
+						</Box>
 					</div>
 				</Collapse>
 
 				<Collapse image={'/gravipop.png'} h1={"Gravipop"} line1={"HTML5"} line2={'2015'}>
-
-					<div className="flex flex-col gap-4">
-						<p>In this game your task is to pop all the bubbles while avoiding obstacles like guided-rockets, sharp saws and spike traps. Each time you pop a big bubble, it will split into two smaller bubbles. Some levels will require you to change gravity to move around. All levels have a time limit. Any remaining time after completing the level is converted into points. There are 30 levels.</p>
-						<a href="https://www.newgrounds.com/portal/view/628279" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View on Newgrounds (buggy)</a>
-						<VideoPlayer url="https://vimeo.com/79067217" />
+					<div className="flex flex-col gap-6">
+						<Box>
+							<div className="flex flex-col gap-4">
+								<p>In this game your task is to pop all the bubbles while avoiding obstacles like guided-rockets, sharp saws and spike traps. Each time you pop a big bubble, it will split into two smaller bubbles. Some levels will require you to change gravity to move around. All levels have a time limit. Any remaining time after completing the level is converted into points. There are 30 levels.</p>
+								
+								<a href="https://www.newgrounds.com/portal/view/628279" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">View on Newgrounds (buggy)</a>
+								
+								<VideoPlayer url="https://vimeo.com/79067217" />
+							</div>
+						</Box>
 					</div>
 				</Collapse>
 
 				<Collapse image={'/jchtml5.jpg'} h1={"JCHTML5 Engine"} line1={"HTML5 Game Template"} line2={'2014'}>
-					<div className="flex flex-col gap-4">
+					<Box>
 						<p>The JCHTML5 Engine was a GameMaker: Studio project file that implemented a long list of features that were common in HTML5 games or required by sponsors when selling game licenses. JCHTML5 was optimized for both mobile and desktop.</p>
-					</div>
+					</Box>
 				</Collapse>
 
 				<Collapse image={'/fly-trap.webp'} h1={"Fly Trap"} line1={"HTML5"} line2={'2014'}>
-					<div className="flex flex-col gap-4">
-						<p className="italic">"Fly Trap is a reflex based game with a little defenseless insect and you can enjoy it online and for free on Silvergames.com. Fly as long as you can but don't touch the insect-eating plants! This might be easy in the beginning but wait until there are plenty of insects waiting for you to eat you alive."</p>
-						<p>A HTML5 game built using GameMaker Studio. Graphics by <a href="https://x.com/NathanGDquest" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Nathan Lovato</a>.</p>
+					<div className="flex flex-col gap-6">
+						<Box>
+							<div className="flex flex-col gap-4">
+								<p className="italic">"Fly Trap is a reflex based game with a little defenseless insect and you can enjoy it online and for free on Silvergames.com. Fly as long as you can but don't touch the insect-eating plants! This might be easy in the beginning but wait until there are plenty of insects waiting for you to eat you alive."</p>
+								
+								<p>A HTML5 game built using GameMaker Studio. Graphics by <a href="https://x.com/NathanGDquest" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">Nathan Lovato</a>.</p>
 
-						<a href="https://www.silvergames.com/en/fly-trap" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">Play on Silvergames.com</a>
-						<VideoPlayer url="/flytrap_video.mov" />
+								<a href="https://www.silvergames.com/en/fly-trap" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">Play on Silvergames.com</a>
+								
+								<VideoPlayer url="/flytrap_video.mov" />
+							</div>
+						</Box>
 					</div>
 				</Collapse>
 
 				<Box>
-					Hedges
+					<p>Hedges</p>
 				</Box>
 			</div>
-
-
 		</Listing>
 	)
 }
 
 const PianoTeacher = function () {
 	return (
-
 		<Listing image="/piano.png" h1="Piano Teacher" line1="2013 - 2016" line2="Melbourne">
 			<Box>
-				Creating learning plans for students. Teaching students how to read and play music.
+				<p>Creating learning plans for students. Teaching students how to read and play music.</p>
 			</Box>
 		</Listing>
 	)
