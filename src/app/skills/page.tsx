@@ -1,9 +1,10 @@
 "use client"
 
+import { Brain, Search, Star } from 'lucide-react'
+
 import ContentContainer from '../../components/content_container'
 import PageContainer from '../../components/page_container'
 import { useState } from 'react'
-import { Brain, Search, Star, Zap, Award, Code, Sparkles } from 'lucide-react'
 
 export default function Skills() {
 	const [searchQuery, setSearchQuery] = useState('')
