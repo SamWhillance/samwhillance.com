@@ -170,7 +170,7 @@ const FreelanceWebDeveloper = function () {
 					<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
 
 					<p className="text-sm text-gray-400 mb-4">2025</p>
-					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 5 hours</p>
+					<p className="text-sm text-gray-400 mb-4"><strong>Project Length:</strong> 8 hours</p>
 					<p className="font-bold mt-6">Tech:</p>
 					<ul className="list-disc leading-relaxed pl-4">
 						<li>React, Next.js, TypeScript, Tailwind</li>
