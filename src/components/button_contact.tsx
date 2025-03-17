@@ -1,32 +1,19 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { Mail } from "lucide-react";
 
 interface ButtonContactProps {
     children: React.ReactNode;
 }
 
-const ButtonContact = ({ children }: ButtonContactProps) => {
+export default function ButtonContact({ children }: ButtonContactProps) {
     return (
         <Link
             id="button_contact"
-            href={'/contact'}
-            className="
-            w-full
-            inline-block px-6 py-4
-            bg-blue-950/70 hover:bg-blue-900/50
-            backdrop-blur-md
-            rounded-2xl
-            text-blue-50
-            text-lg font-medium
-            no-underline
-            transition-all duration-100
-            border border-blue-900/80
-            shadow-lg hover:shadow-xl
-            hover:-translate-y-0.5
-        "
+            href="/contact"
+            className="btn btn-primary flex items-center gap-2 group"
         >
-            {children}
+            <Mail className="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" />
+            <span>{children}</span>
         </Link>
     );
-};
-
-export default ButtonContact;
+}

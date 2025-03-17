@@ -1,17 +1,20 @@
-import Footer from './footer'
-import Nav from './nav'
+import Nav from "./nav";
+import Footer from "./footer";
 
-export default function PageContainer({ children }: { children: React.ReactNode }) {
+interface PageContainerProps {
+    children: React.ReactNode;
+}
+
+export default function PageContainer({ children }: PageContainerProps) {
     return (
-        <div className="flex flex-col min-h-screen m-2">
-            <div id="page" className="flex flex-col min-h-screen rounded-2xl">
-                <div className="ml-auto mr-auto">
-                    <Nav />
+        <div id="page" className="min-h-screen flex flex-col">
+            <Nav />
+            <main className="flex-grow flex justify-center py-8 px-4 sm:px-6 lg:px-8">
+                <div className="w-full max-w-7xl">
                     {children}
                 </div>
-            </div>
-
+            </main>
             <Footer />
         </div>
-    )
+    );
 }

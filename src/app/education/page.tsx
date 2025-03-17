@@ -1,89 +1,221 @@
+import { Award, BookOpen, Building, GraduationCap } from 'lucide-react'
+
 import ContentContainer from '../../components/content_container'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageContainer from '../../components/page_container'
-import TreeLine from '../../components/tree_line'
 
-export default function Home() {
-
+export default function Education() {
     return (
         <PageContainer>
-            <ContentContainer>
-                <div className="flex flex-col md:flex-row">
-                    <div className="flex flex-col p-8">
-                        <Link href="https://www.swinburne.edu.au/" target="_blank" className="w-16">
-                            <Image src="/swinburne.png" alt="Swinburne University" width={200} height={0} priority />
-                        </Link>
-                    </div>
-                    <div className="flex flex-col p-8 gap-4 w-full">
-                        <div>
-                            <h3 className="text-2xl font-bold mb-0">Swinburne University of Technology</h3>
-                            <h4 className="text-lg text-white/75">Melbourne</h4>
-                            <p className="text-lg text-white/75">2012 – 2016</p>
-                        </div>
-
-                        <h3 className="text-xl font-bold">Certifications</h3>
-
-                        <div className="flex flex-col pl-4 bg-black/50 p-4 rounded-lg">
-                            <TreeLine isFirst>Bachelor of Computer Science</TreeLine>
-                            <div className="pl-4">
-                                <TreeLine><span className="text-white/75">Computer Science and Software Engineering</span></TreeLine>
+            <div className="space-y-12">
+                <section>
+                    <ContentContainer>
+                        <div className="space-y-8">
+                            <div className="space-y-2">
+                                <h1 className="text-4xl font-bold">
+                                    <span className="gradient-text">Education</span>
+                                </h1>
+                                <div className="h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+                                <p className="text-text-muted max-w-2xl">
+                                    My academic journey and qualifications in Computer Science and Arts.
+                                </p>
                             </div>
 
-                            <TreeLine isFirst>Bachelor of Arts</TreeLine>
-                            <div className="pl-4">
-                                <TreeLine><span className="text-white/75">Games and Interactivity</span></TreeLine>
+                            <div className="glass-card p-8 animate-fade-in">
+                                <div className="flex flex-col md:flex-row gap-8">
+                                    <div className="flex-shrink-0 flex flex-col items-center md:items-start">
+                                        <Link 
+                                            href="https://www.swinburne.edu.au/" 
+                                            target="_blank" 
+                                            className="w-32 h-32 relative glass-card p-4 hover:scale-105 transition-transform duration-300"
+                                        >
+                                            <Image 
+                                                src="/swinburne.png" 
+                                                alt="Swinburne University" 
+                                                fill
+                                                className="object-contain p-2"
+                                                priority 
+                                            />
+                                        </Link>
+                                    </div>
+
+                                    <div className="flex-grow space-y-6">
+                                        <div className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <Building className="w-6 h-6 text-primary" />
+                                                <h2 className="text-2xl font-bold">Swinburne University of Technology</h2>
+                                            </div>
+                                            <div className="text-text-muted space-y-1">
+                                                <p className="flex items-center gap-2">
+                                                    <span className="font-medium">Location:</span> Melbourne
+                                                </p>
+                                                <p className="flex items-center gap-2">
+                                                    <span className="font-medium">Period:</span> 2012 – 2016
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-4">
+                                            <div className="flex items-center gap-2">
+                                                <Award className="w-6 h-6 text-secondary" />
+                                                <h3 className="text-xl font-bold">Certifications</h3>
+                                            </div>
+                                            
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="glass-card p-4 space-y-2">
+                                                    <h4 className="font-semibold text-lg">Bachelor of Computer Science</h4>
+                                                    <p className="text-text-muted">Computer Science and Software Engineering</p>
+                                                </div>
+                                                <div className="glass-card p-4 space-y-2">
+                                                    <h4 className="font-semibold text-lg">Bachelor of Arts</h4>
+                                                    <p className="text-text-muted">Games and Interactivity</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="glass-card p-4 inline-block">
+                                                <p className="text-text-muted">
+                                                    <span className="font-medium mr-2">GPA:</span>
+                                                    <span className="text-primary">3.118</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <br />
-                            <p className="text-white/45"><strong className="mr-2">GPA</strong> 3.118</p>
+
+                            <div className="space-y-6 animate-fade-in delay-100">
+                                <div className="flex items-center gap-2">
+                                    <BookOpen className="w-6 h-6 text-primary" />
+                                    <h3 className="text-xl font-bold">Overview</h3>
+                                </div>
+                                <div className="glass-card p-6">
+                                    <p className="text-text-muted leading-relaxed">
+                                        Students completing this degree will possess a highly desirable combination of skills, enabling them to find work in a variety of positions in the information and communications technology sector. Students receive extensive education in contemporary approaches to the analysis, design and implementation of large-scale systems, along with a sound understanding of the traditional aspects of computer science such as hardware and operating systems.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="space-y-6 animate-fade-in delay-200">
+                                <div className="flex items-center gap-2">
+                                    <GraduationCap className="w-6 h-6 text-secondary" />
+                                    <h3 className="text-xl font-bold">Units</h3>
+                                </div>
+                                <div className="glass-card p-6">
+                                    <div className="grid md:grid-cols-2 gap-8">
+                                        <div className="space-y-4">
+                                            <h4 className="font-semibold text-lg text-primary">Computer Science</h4>
+                                            <ul className="space-y-2 text-text-muted">
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Database, Analysis and Design
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Software Architectures and Design
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Technical Software Development
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Object Oriented Programming
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Software Development Practices
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Software Deployment and Evolution
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Web Applications
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Data Structures and Patterns
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Interface Design and Development
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                                    Engineering Mathematics
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="space-y-4">
+                                            <h4 className="font-semibold text-lg text-secondary">Games & Interactive Media</h4>
+                                            <ul className="space-y-2 text-text-muted">
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Artificial Intelligence
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    User Experience Design
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Start-Up Fundamentals
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Digital Graphics
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    LAN Principles
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Digital Video and Audio
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Pervasive Game Design
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Physics of Games
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Principles of Game Design
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Professional Issues in IT
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Writing for Interactive Narratives
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    3D Modelling
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Games Programming
+                                                </li>
+                                                <li className="flex items-center gap-2">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                                    Interactive Games Structures
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-
-                <div className="flex flex-col p-8 gap-4">
-                    <h3 className="text-xl font-bold">Overview</h3>
-                    <p className="text-white/75 bg-black/50 p-4 rounded-lg">Students completing this degree will possess a highly desirable combination of skills, enabling them to find work in a variety of positions in the information and communications technology sector. Students receive extensive education in contemporary approaches to the analysis, design and implementation of large-scale systems, along with a sound understanding of the traditional aspects of computer science such as hardware and operating systems.</p>
-
-                    <h3 className="text-xl font-bold">Units</h3>
-                    <div className="flex flex-col md:flex-row text-white/75 bg-black/50 p-4 pl-8 rounded-lg">
-                        <div className="flex flex-col pr-8">
-                            <ul className="list-disc leading-relaxed">
-                                <li>Database, Analysis and Design</li>
-                                <li>Software Architectures and Design</li>
-                                <li>Technical Software Development</li>
-                                <li>Object Oriented Programming</li>
-                                <li>Software Development Practices</li>
-                                <li>Software Deployment and Evolution</li>
-                                <li>Web Applications</li>
-                                <li>Data Structures and Patterns</li>
-                                <li>Interface Design and Development</li>
-                                <li>Engineering Mathematics</li>
-                            </ul>
-                        </div>
-                        <div className="flex flex-col">
-                            <ul className="list-disc leading-relaxed">
-                                <li>Artificial Intelligence</li>
-                                <li>User Experience Design</li>
-                                <li>Start-Up Fundamentals</li>
-                                <li>Digital Graphics</li>
-                                <li>LAN Principles</li>
-                                <li>Digital Video and Audio</li>
-                                <li>Pervasive Game Design</li>
-                                <li>Physics of Games</li>
-                                <li>Principles of Game Design</li>
-                                <li>Professional Issues in IT</li>
-                                <li>Writing for Interactive Narratives</li>
-                                <li>3D Modelling</li>
-                                <li>Games Programming</li>
-                                <li>Interactive Games Structures</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </ContentContainer>
-        </PageContainer >
+                    </ContentContainer>
+                </section>
+            </div>
+        </PageContainer>
     )
 }

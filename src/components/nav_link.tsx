@@ -1,31 +1,25 @@
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
 }
 
-const NavLink = ({ href, children }: NavLinkProps) => {
+export default function NavLink({ href, children }: NavLinkProps) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
     <Link
       href={href}
-      className="
-        inline-block px-6 py-4
-        bg-blue-100/30 hover:bg-blue-200/50
-        backdrop-blur-md
-        rounded-2xl
-        text-blue-50
-        text-lg font-medium
-        no-underline
-        transition-all duration-100
-        border border-blue-200/20
-        shadow-lg hover:shadow-xl
-        hover:-translate-y-0.5
-      "
+      className={`nav-link ${
+        isActive
+          ? "text-primary font-semibold after:w-full"
+          : "text-foreground hover:text-primary"
+      }`}
     >
       {children}
     </Link>
   );
-};
-
-export default NavLink;
+}
