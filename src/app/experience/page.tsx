@@ -1,16 +1,18 @@
+import { Code, Database, Server } from 'lucide-react'
+
 import { Collapse } from '../../components/collapse'
 import ContentContainer from '../../components/content_container'
 import H3 from '../../components/h3'
 import Image from 'next/image'
 import PageContainer from '../../components/page_container'
 import VideoPlayer from '../../components/video_player'
-import { Server, Code, Database } from 'lucide-react'
 
 export default function Experience() {
 
 	return (
 		<PageContainer>
 			<ContentContainer>
+				<DelinkedIn />
 				<ColorInEmoji />
 				<Wethrift />
 				<BendigoBreville/>
@@ -49,6 +51,23 @@ const Box = function ({ children }: { children: React.ReactNode }) {
 		<div className="glass-card p-6 space-y-4 text-text-muted">
 			{children}
 		</div>
+	)
+}
+
+const DelinkedIn = function () {
+	return (
+		<Listing image="/delinkedin.png" h1="DelinkedIn" h2="Creator" line1="March 2025" line2="Remote">
+			<Box>
+				<p><a href="https://delinkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">DelinkedIn</a> is a Google Chrome extension that decodes corporate jargon, reveals hidden expectations, and exposes red flags in job postings - with just the right amount of humour.</p>
+				<p>LinkedIn (and other) job descriptions have an all-too-common problem: they're full of corporate buzzwords — terms which are now so overused that they have lost almost all meaning. Job ads read like HR word salad.</p>
+				<ul>
+					<li>‘Fast-paced environment’ becomes ‘You’ll never catch your breath.’</li>
+					<li>‘Wearing many hats’ turns into ‘One salary, five jobs.’</li>
+					<li>‘Collaborative culture’ is now ‘Endless meetings, no decisions.’</li>
+				</ul>
+				<p>DelinkedIn can sometimes reveal some useful insights, but it was mainly built for entertainment purposes (comedic relief after reading hundreds of job ads myself).</p>
+			</Box>
+		</Listing>
 	)
 }
 
