@@ -317,7 +317,7 @@ const FreelanceWebDeveloper = function () {
 						
 						<div className="space-y-2">
 							<p className="text-sm text-text-muted">2025</p>
-							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 5 hours</p>
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 8 hours</p>
 						</div>
 
 						<div className="space-y-2">
