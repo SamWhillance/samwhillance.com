@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Database, Github, Laptop, Server } from 'lucide-react'
+import { ArrowRight, Database, Github, Laptop, Server } from 'lucide-react'
 
 import ContentContainer from '../components/content_container'
 import Image from 'next/image'
