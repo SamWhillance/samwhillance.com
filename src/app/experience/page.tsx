@@ -377,6 +377,28 @@ const FreelanceWebDeveloper = function () {
 
 				<Box>
 					<div className="flex flex-col gap-4">
+						<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg" />
+						<div>
+							<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">gallowaybuilders.com.au</a>
+						</div>
+
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 12 hours</p>
+							<p className="text-sm text-text-muted">2024</p>
+						</div>
+
+						<ul className="list-disc pl-4 space-y-1">
+							<li>Friend's construction business</li>
+							<li>Hosted on Heroku</li>
+							<li>Cloudflare routing</li>
+							<li>React, Next.js</li>
+							<li>Automatic deploys from git pushes</li>
+						</ul>
+					</div>
+				</Box>
+
+				<Box>
+					<div className="flex flex-col gap-4">
 						<Image src="/vatmen_logo.png" alt="Vatmen Group Logo" width={100} height={0} className="rounded-lg" />
 						<div>
 							<a href="https://vatmengroup.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">vatmengroup.com.au</a>
@@ -399,27 +421,6 @@ const FreelanceWebDeveloper = function () {
 					</div>
 				</Box>
 
-				<Box>
-					<div className="flex flex-col gap-4">
-						<Image src="/galloway.png" alt="Galloway Builders Logo" width={100} height={0} className="rounded-lg" />
-						<div>
-							<a href="https://gallowaybuilders.com.au" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">gallowaybuilders.com.au</a>
-						</div>
-
-						<div className="space-y-2">
-							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 10 hours</p>
-							<p className="text-sm text-text-muted">2024</p>
-						</div>
-
-						<ul className="list-disc pl-4 space-y-1">
-							<li>Friend's construction business</li>
-							<li>Hosted on Heroku</li>
-							<li>Cloudflare routing</li>
-							<li>React, Next.js</li>
-							<li>Automatic deploys from git pushes</li>
-						</ul>
-					</div>
-				</Box>
 			</div>
 		</Listing>
 	)
