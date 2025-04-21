@@ -1,4 +1,15 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, createLucideIcon } from "lucide-react";
+
+const XIcon = createLucideIcon("X", [
+  [
+    "path",
+    {
+      d: "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z",
+      stroke: "none",
+      fill: "currentColor",
+    },
+  ],
+]);
 
 export default function Footer() {
     return (
@@ -28,6 +39,15 @@ export default function Footer() {
                         >
                             <span className="sr-only">LinkedIn</span>
                             <Linkedin className="h-5 w-5" />
+                        </a>
+                        <a 
+                            href="https://x.com/swhillance" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-text-muted hover:text-primary transition-colors duration-300"
+                        >
+                            <span className="sr-only">X (Twitter)</span>
+                            <XIcon className="h-5 w-5" />
                         </a>
                     </div>
                 </div>

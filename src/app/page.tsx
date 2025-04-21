@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Database, Github, Laptop, Server } from 'lucide-react'
+import { ArrowRight, Database, Github, Laptop, Server } from 'lucide-react'
 
 import ContentContainer from '../components/content_container'
 import Image from 'next/image'
@@ -22,10 +22,6 @@ export default function Home() {
                     <br />
                     Developer
                   </h1>
-                  <div className="flex items-center space-x-2 mt-2">
-                    <Code className="h-5 w-5 text-primary" />
-                    <p className="text-lg font-mono text-text-muted">{'<Software Engineer />'}</p>
-                  </div>
                 </div>
                 
                 <p className="text-lg text-text-muted">
@@ -84,16 +80,16 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4 animate-fade-in">
                   <p className="text-lg">
-                    As a full-stack web developer, I specialize in creating robust and scalable web applications using modern JavaScript technologies. With extensive expertise in React, Node.js, and the broader JavaScript ecosystem, I bring ideas to life through clean, efficient code and intuitive user interfaces.
+                    As a full-stack web developer, I specialize in creating robust and scalable web applications using modern JavaScript technologies. With extensive expertise in React, AngularJS, jQuery, Node.js, and the broader JavaScript ecosystem, I bring ideas to life through clean, efficient code and intuitive user interfaces.
                   </p>
                   <p>
-                    My technical foundation spans the full development stack, from crafting responsive front-end experiences with HTML5, CSS3, and modern frameworks like Tailwind CSS, to implementing robust back-end solutions using Node.js and various cloud services.
+                    My technical foundation spans the full development stack, from crafting responsive front-end experiences with HTML5, CSS3, and modern frameworks like Tailwind CSS, Bootstrap, Material UI, to implementing robust back-end solutions using Node.js and various cloud services.
                   </p>
                 </div>
                 
                 <div className="space-y-4 animate-fade-in delay-200">
                   <p>
-                    I'm particularly skilled in Microsoft technologies, having developed complex enterprise solutions using Office 365, Dynamics 365 CE, and the Power Platform suite. My experience extends to database design and management, API development, and system integration, ensuring seamless functionality across complex applications.
+                    I also have significant experience in Microsoft technologies, having developed complex enterprise solutions using Office 365, Dynamics 365 CE, and the Power Platform suite. My experience extends to database design and management, API development, and system integration, ensuring seamless functionality across complex applications.
                   </p>
                   <p>
                     What sets me apart is my commitment to combining technical excellence with strong project management and communication skills. I thrive in collaborative environments, bringing not just technical expertise but also leadership, mentoring capabilities, and a strong dedication to delivering high-quality solutions that exceed client expectations.
@@ -126,7 +122,7 @@ export default function Home() {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 text-primary mr-2" />
-                      React & Next.js
+                      React, AngularJS, jQuery
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 text-primary mr-2" />
@@ -134,7 +130,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 text-primary mr-2" />
-                      Tailwind CSS
+                      Tailwind, Bootstrap, Material UI
                     </li>
                   </ul>
                 </div>
@@ -176,7 +172,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 text-accent mr-2" />
-                      MongoDB
+                      DynamoDB
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 text-accent mr-2" />
