@@ -307,6 +307,35 @@ const FreelanceWebDeveloper = function () {
 	return (
 		<Listing image="/freelance_web.png" h1="Freelance Web Developer" line1="2024 - Present" line2="Remote">
 			<div className="flex flex-col gap-6">
+
+				<Box>					
+					<div className="flex flex-col gap-4">
+						<Image src="/t3gg.png" alt="t3gg.me" width={100} height={0} className="rounded-lg" />
+						<div>
+							<H3>t3gg.me</H3>
+							<a href="https://t3gg.me" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 transition-colors">t3gg.me</a>
+						</div>
+						
+						<div className="space-y-2">
+							<p className="text-sm text-text-muted">2025</p>
+							<p className="text-sm text-text-muted"><strong>Project Length:</strong> 1.5 hours</p>
+						</div>
+
+						<div className="space-y-2">
+							<p className="font-semibold">Description:</p>
+							<p>A simple web app that lets users make themselves look like Theo (t3.gg) using AI-powered face-swapping.</p>
+						</div>
+
+						<div className="space-y-2">
+							<p className="font-semibold">Tech:</p>
+							<ul className="list-disc pl-4 space-y-1">
+								<li>React, Next.js, TypeScript, Tailwind</li>
+								<li>Vercel + Cloudflare</li>
+							</ul>
+						</div>
+					</div>
+				</Box>
+
 				<Box>					
 					<div className="flex flex-col gap-4">
 						<Image src="/bendigobreville.jpg" alt="Bendigo Breville Logo" width={100} height={0} className="rounded-lg" />
