@@ -288,9 +288,11 @@ const skills: Skill[] = [
 	{ name: 'ERDs', value: 5, category: 'Database' },
 
 	// Dev Ops
-	{ name: 'CI / CD', value: 6, category: 'Dev Ops' },
+	{ name: 'Jest', value: 4, category: 'Dev Ops' },
+	{ name: 'GitHub Actions', value: 4, category: 'Dev Ops' },
+	{ name: 'CI / CD', value: 4, category: 'Dev Ops' },
 	{ name: 'GitHub', value: 8, category: 'Dev Ops' },
-	{ name: 'Automated Testing', value: 7, category: 'Dev Ops' },
+	{ name: 'Automated Testing', value: 6, category: 'Dev Ops' },
 
 	// Project Management
 	{ name: 'Git', value: 8, category: 'Project Management' },
