@@ -224,21 +224,21 @@ const Wethrift = function () {
 
 const BendigoBreville = function () {
 	return (
-		<Listing image="/bendigobreville.jpg" h1="Bendigo Breville" h2="Founder & Diretor" line1="2020 - Present" line2="Bendigo, VIC">
+		<Listing image="/bendigobreville.jpg" h1="Bendigo Breville" h2="Owner Operator" line1="2020 - Present" line2="Bendigo, VIC">
 		<Box>					
 			<H3>Bendigo Breville Repairs & Service</H3>
 			<a href="https://bendigobreville.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline mb-4">bendigobreville.com</a>
 
 			<p className="font-bold mt-6">As the owner-operator of a specialized coffee machine repair business, I provide comprehensive service and repair for the complete range of Breville coffee machines.</p>
 			<br/>
-			<p>Through dedicated self-education and hands-on experience, I've developed expertise across all Breville models, diagnosing and resolving even the most complex technical issues.</p>
+			<p>Through dedicated self-education, hands-on experience and network building, I've developed expertise across all Breville models, diagnosing and resolving complex technical issues.</p>
 			<br/>
 			<p>Key responsibilities and achievements:</p>
 			<ul className="list-disc leading-relaxed pl-4">
-				<li>Communicate directly with customers to understand their concerns, explain technical issues in accessible language, and provide transparent estimates</li>
-				<li>Maintain a network of fellow Breville technicians throughout Australia, facilitating knowledge sharing and collaborative problem-solving</li>
-				<li>Deliver reliable, high-quality repairs that extend machine lifespan and enhance performance</li>
-				<li>Manage inventory of specialized Breville parts, minimizing customer wait times.</li>
+				<li>Communicate with customers to understand their machine's issues, explain technical issues in accessible language, and provide transparent estimates.</li>
+				<li>Maintain relationships with other Breville technicians throughout Australia, facilitating knowledge sharing and collaborative problem-solving.</li>
+				<li>Deliver reliable, high-quality repairs that extend machine lifespan and enhance performance.</li>
+				<li>Manage inventory of specialized Breville parts, practically eliminating customer wait times.</li>
 			</ul>
 		</Box>
 
